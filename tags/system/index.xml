@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Rashida-Blog</title>
-    <link>https://rashidakaku.github.io/posts/</link>
-    <description>Recent content in Posts on Rashida-Blog</description>
+    <title>System on Rashida-Blog</title>
+    <link>https://rashidakaku.github.io/tags/system/</link>
+    <description>Recent content in System on Rashida-Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>This is a customized copyright.</copyright>
-    <lastBuildDate>Tue, 09 May 2023 04:53:11 +0900</lastBuildDate><atom:link href="https://rashidakaku.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 May 2023 04:53:11 +0900</lastBuildDate><atom:link href="https://rashidakaku.github.io/tags/system/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Win 重装系统</title>
       <link>https://rashidakaku.github.io/posts/win-%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
@@ -22,17 +22,6 @@
 Windsys精简
 吻妻精简
 PE制作 下载优启通，解压后启动软件 默认选U盘模式即可 确认即将制作的是你的U盘（拔出其余外接U盘、硬盘） 点全新制作即可开始制作了，如果你的优盘之前制作过优启通，这里点免格升级即可，数据不会丢失，直接升级到最新的优启通。 提示操作完成即可 重装系统 将下载的镜像移入制作好的U盘 请将电脑关机，将PE优盘插入到电脑后开机。然后在开机后的几秒内，当出现开机画面，按下快捷启动热键F12（不同机型请查看下面快捷键列表）进入启动项列表，然后在列表中通过方向键选择U盘所在选项，一般会带USB字样或者是U盘的品牌名（Sandisk、Toshiba之类），然后敲击回车可以进入U盘的PE菜单选择界面。 进入优启通启动菜单选择界面，一般都是选择从windows 10 PE，回车确认 进Win10 PE系统后，运行桌面“DG硬盘分区”工具 运行桌面“EIX系统安装”工具 在工具窗口左边选择要恢复的镜像文件，右边选择要安装系统的目标分区，然后点击“一键恢复” 在弹出窗口中去掉“驱动调用”勾选，另外的选项保持默认即可“确认”执行 等待系统安装完成 </description>
-    </item>
-    
-    <item>
-      <title>这是一篇测试文章</title>
-      <link>https://rashidakaku.github.io/posts/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</link>
-      <pubDate>Mon, 08 May 2023 23:58:14 +0900</pubDate>
-      
-      <guid>https://rashidakaku.github.io/posts/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</guid>
-      <description>这是一篇测试文章
-这是一篇测试文章
-这是一篇测试文章</description>
     </item>
     
   </channel>
