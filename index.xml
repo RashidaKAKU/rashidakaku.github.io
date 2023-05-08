@@ -26,7 +26,7 @@
 &lt;h2 id=&#34;准备&#34;&gt;准备：&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;一个大于 8G 的 U盘用于制作 pe 系统（注意备份，制作PE过程中会格式化 U盘）。&lt;/p&gt;
+&lt;p&gt;一个大于 8G 的 U盘用于制作 PE 系统（注意备份，制作PE过程中会格式化 U盘）。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.upe.net/&#34;&gt;优启通&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -51,13 +51,13 @@
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/FQ2Ko5s8huB2zMEpMGiab4I8HunByuVtv6Mnr5XepeeFcYP649ich28j9ZowxNA0MlGVnnm0N0o1LfM86GoicRyfA/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;图片&#34;&gt;&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;进入优启通启动菜单选择界面，一般都是选择 windows 10 PE，回车确认。&lt;/li&gt;
-&lt;li&gt;进 Win10 PE 系统后，运行桌面“DG 硬盘分区”工具。&lt;/li&gt;
+&lt;li&gt;进入优启通启动菜单选择界面，根据自身配置选择系统，以 Win 10 x64 为例。小键盘上下选择，回车确认。&lt;/li&gt;
+&lt;li&gt;进 PE 系统后，运行桌面“DG 硬盘分区”工具。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/FQ2Ko5s8huB2zMEpMGiab4I8HunByuVtvIyicWjZ5zhBBnuymEfTFfLQ7GodEbUAxlsr0P6VvXkiatJmic9bslDcAg/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;图片&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/FQ2Ko5s8huB2zMEpMGiab4I8HunByuVtvnskTwEqNr5VjvqXxqZH6G2yH3caX5GJe3s5DeeLhlFFU5TJtxFXFbA/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;图片&#34;&gt;&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;运行桌面“EIX系统安装”工具。&lt;/li&gt;
+&lt;li&gt;运行桌面“EIX 系统安装”工具。&lt;/li&gt;
 &lt;li&gt;在工具窗口左边选择要恢复的镜像文件，右边选择要安装系统的目标分区，然后点击“一键恢复”。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/FQ2Ko5s8huB2zMEpMGiab4I8HunByuVtv4KMvF0EuDAsict7Y7BDIbzYx5oVGiciceMaGeib0076DhicMGBQ9qltgeKw/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;图片&#34;&gt;&lt;/p&gt;
