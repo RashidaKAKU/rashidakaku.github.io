@@ -6,6 +6,16 @@
     <description>Recent content in Tags on Rashida-Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <copyright>This is a customized copyright.</copyright><atom:link href="https://rashidakaku.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Mon, 08 May 2023 23:58:14 +0900</lastBuildDate><atom:link href="https://rashidakaku.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Text</title>
+      <link>https://rashidakaku.github.io/tags/text/</link>
+      <pubDate>Mon, 08 May 2023 23:58:14 +0900</pubDate>
+      
+      <guid>https://rashidakaku.github.io/tags/text/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

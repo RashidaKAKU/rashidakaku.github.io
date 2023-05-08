@@ -2,17 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://rashidakaku.github.io/categories/</loc>
+    <lastmod>2023-05-08T23:58:14+09:00</lastmod>
+  </url><url>
     <loc>https://rashidakaku.github.io/posts/</loc>
     <lastmod>2023-05-08T23:58:14+09:00</lastmod>
   </url><url>
     <loc>https://rashidakaku.github.io/</loc>
     <lastmod>2023-05-08T23:58:14+09:00</lastmod>
   </url><url>
-    <loc>https://rashidakaku.github.io/posts/xxx/</loc>
+    <loc>https://rashidakaku.github.io/tags/</loc>
     <lastmod>2023-05-08T23:58:14+09:00</lastmod>
   </url><url>
-    <loc>https://rashidakaku.github.io/categories/</loc>
+    <loc>https://rashidakaku.github.io/tags/text/</loc>
+    <lastmod>2023-05-08T23:58:14+09:00</lastmod>
   </url><url>
-    <loc>https://rashidakaku.github.io/tags/</loc>
+    <loc>https://rashidakaku.github.io/categories/text/</loc>
+    <lastmod>2023-05-08T23:58:14+09:00</lastmod>
+  </url><url>
+    <loc>https://rashidakaku.github.io/posts/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2023-05-08T23:58:14+09:00</lastmod>
   </url>
 </urlset>
