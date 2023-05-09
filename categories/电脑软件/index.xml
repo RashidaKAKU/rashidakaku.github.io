@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>电脑软件 on Rashida-Blog</title>
+    <link>https://rashidakaku.github.io/categories/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/</link>
+    <description>Recent content in 电脑软件 on Rashida-Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Tue, 09 May 2023 20:24:05 +0900</lastBuildDate><atom:link href="https://rashidakaku.github.io/categories/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Rashida TTS</title>
+      <link>https://rashidakaku.github.io/windows/rashida-tts/</link>
+      <pubDate>Tue, 09 May 2023 20:24:05 +0900</pubDate>
+      
+      <guid>https://rashidakaku.github.io/windows/rashida-tts/</guid>
+      <description>Rashida TTS 欢迎使用 注意：TXT编码格式需为UTF8
+基于PYTTSX3的文本转语音工具 UI为 tkinter 测试 43000 字符没有问题
+B站视频展示https://www.bilibili.com/video/av442548077/
+常见问题 .py 文件无法正常运行 一般是由于缺少运行库，可以尝试使用 pip install -r requirements.txt 解决
+Linux 系统缺少 espeak ArchLinux 以及基于此系统的发行版 Linux 用户可以通过 yay 安装 AUR 包 espeak 解决这个问题
+Ubuntu 系统可以通过安装 espeak 解决
+如果尚未解决，可以尝试重新安装 pyttsx3 模块</description>
+    </item>
+    
+  </channel>
+</rss>
