@@ -10,10 +10,10 @@
     <lastBuildDate>Tue, 09 May 2023 20:24:05 +0900</lastBuildDate><atom:link href="https://rashidakaku.github.io/categories/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title> Rashida TTS</title>
-      <link>https://rashidakaku.github.io/windows/rashida-tts/</link>
+      <link>https://rashidakaku.github.io/rashida-tts/</link>
       <pubDate>Tue, 09 May 2023 20:24:05 +0900</pubDate>
       
-      <guid>https://rashidakaku.github.io/windows/rashida-tts/</guid>
+      <guid>https://rashidakaku.github.io/rashida-tts/</guid>
       <description>Rashida TTS 欢迎使用 注意：TXT编码格式需为UTF8
 基于PYTTSX3的文本转语音工具 UI为 tkinter 测试 43000 字符没有问题
 B站视频展示https://www.bilibili.com/video/av442548077/
