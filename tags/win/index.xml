@@ -9,11 +9,11 @@
     <copyright>This is a customized copyright.</copyright>
     <lastBuildDate>Tue, 09 May 2023 20:24:05 +0900</lastBuildDate><atom:link href="https://rashidakaku.github.io/tags/win/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title> Rashida TTS</title>
-      <link>https://rashidakaku.github.io/rashida-tts/</link>
+      <title>Rashida TTS</title>
+      <link>https://rashidakaku.github.io/windows/rashida-tts/</link>
       <pubDate>Tue, 09 May 2023 20:24:05 +0900</pubDate>
       
-      <guid>https://rashidakaku.github.io/rashida-tts/</guid>
+      <guid>https://rashidakaku.github.io/windows/rashida-tts/</guid>
       <description>Rashida TTS 欢迎使用 注意：TXT 编码格式需为 UTF8
 基于 PYTTSX3 的文本转语音工具 UI 为 TKINTER 测试 43000 字符没有问题
 B 站视频展示https://www.bilibili.com/video/av442548077/
@@ -24,11 +24,23 @@ Ubuntu 系统可以通过安装 espeak 解决
     </item>
     
     <item>
-      <title>Win 重装系统</title>
-      <link>https://rashidakaku.github.io/win-%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
+      <title>Hugo 新建文章</title>
+      <link>https://rashidakaku.github.io/windows/hugo-new/</link>
       <pubDate>Tue, 09 May 2023 04:53:11 +0900</pubDate>
       
-      <guid>https://rashidakaku.github.io/win-%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>https://rashidakaku.github.io/windows/hugo-new/</guid>
+      <description> 利用 Python 新建 hugo 文章到指定文件夹
+使用方式 1. 设置文章的元数据 2. 指定Hugo的文章目录路径 3. 创建新的Markdown文件 Hugo的文章目录路径默认为 content 文件夹
+文件名默认为元数据中的 title
+在代码 --- 之后 &amp;#34;&amp;#34;&amp;#34; 之上添加你文章的内容 </description>
+    </item>
+    
+    <item>
+      <title>Win 重装系统</title>
+      <link>https://rashidakaku.github.io/windows/win-%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Tue, 09 May 2023 04:53:11 +0900</pubDate>
+      
+      <guid>https://rashidakaku.github.io/windows/win-%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
       <description>重装系统 文中 PE 为优启通，推荐使用。
 准备： 一个大于 8G 的 U 盘用于制作 PE 系统（注意备份，制作 PE 过程中会格式化 U 盘）。
 优启通

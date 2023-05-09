@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-<title>Win 重装系统</title>
+<title>Hugo 新建文章</title>
 
 
 
@@ -10,16 +10,16 @@
 <meta name="google-site-verification" content="">
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 <meta content="telephone=no" name="format-detection">
-<meta name="description" content="这是一个Win电脑重装系统的教程">
+<meta name="description" content="利用python新建文章到指定文件夹">
 <meta name="renderer" content="webkit">
 <meta name="theme-color" content="#ffffff">
 
 
 
-<meta property="og:title" content="Win 重装系统" />
-<meta property="og:description" content="这是一个Win电脑重装系统的教程" />
+<meta property="og:title" content="Hugo 新建文章" />
+<meta property="og:description" content="利用python新建文章到指定文件夹" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://rashidakaku.github.io/win-%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/" /><meta property="article:section" content="" />
+<meta property="og:url" content="https://rashidakaku.github.io/windows/hugo-new/" /><meta property="article:section" content="Windows" />
 <meta property="article:published_time" content="2023-05-09T04:53:11+09:00" />
 <meta property="article:modified_time" content="2023-05-09T04:53:11+09:00" /><meta property="og:site_name" content="Rashida-Blog" />
 
@@ -28,8 +28,8 @@
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Win 重装系统"/>
-<meta name="twitter:description" content="这是一个Win电脑重装系统的教程"/>
+<meta name="twitter:title" content="Hugo 新建文章"/>
+<meta name="twitter:description" content="利用python新建文章到指定文件夹"/>
 
 
 
@@ -166,8 +166,8 @@
 						
 						
 							<li>
-								<a href="#%e9%87%8d%e8%a3%85%e7%b3%bb%e7%bb%9f" class="nav-重装系统">
-									重装系统
+								<a href="#%e4%bd%bf%e7%94%a8%e6%96%b9%e5%bc%8f" class="nav-使用方式">
+									使用方式
 								</a>
 							</li>
 						
@@ -190,8 +190,8 @@
 						
 						
 							<li>
-								<a href="#%e5%87%86%e5%a4%87" class="nav-准备">
-									准备：
+								<a href="#1-%e8%ae%be%e7%bd%ae%e6%96%87%e7%ab%a0%e7%9a%84%e5%85%83%e6%95%b0%e6%8d%ae" class="nav-1-设置文章的元数据">
+									1. 设置文章的元数据
 								</a>
 							</li>
 						
@@ -208,8 +208,8 @@
 						
 						
 							<li>
-								<a href="#pe-%e5%88%b6%e4%bd%9c" class="nav-pe-制作">
-									PE 制作
+								<a href="#2-%e6%8c%87%e5%ae%9ahugo%e7%9a%84%e6%96%87%e7%ab%a0%e7%9b%ae%e5%bd%95%e8%b7%af%e5%be%84" class="nav-2-指定hugo的文章目录路径">
+									2. 指定Hugo的文章目录路径
 								</a>
 							</li>
 						
@@ -226,8 +226,8 @@
 						
 						
 							<li>
-								<a href="#%e9%87%8d%e8%a3%85%e7%b3%bb%e7%bb%9f-1" class="nav-重装系统-1">
-									重装系统
+								<a href="#3-%e5%88%9b%e5%bb%ba%e6%96%b0%e7%9a%84markdown%e6%96%87%e4%bb%b6" class="nav-3-创建新的markdown文件">
+									3. 创建新的Markdown文件
 								</a>
 							</li>
 						
@@ -297,10 +297,10 @@
                 
             >
                 <div class="post-title">
-                    Win 重装系统
+                    Hugo 新建文章
                     
                     <div class="post-subtitle">
-                        这是一个Win电脑重装系统的教程
+                        利用python新建文章到指定文件夹
                     </div>
                     
                     <div class="post-meta">
@@ -312,7 +312,7 @@
 
                         
                             <i class="material-icons" style="">folder</i>
-                                <a href="/categories/%E7%94%B5%E8%84%91%E6%95%99%E7%A8%8B">电脑教程</a>
+                                <a href="/categories/%E8%84%9A%E6%9C%AC">脚本</a>
                                 &nbsp;
                         
 
@@ -322,7 +322,10 @@
                                 <a href="/tags/win">Win</a>
                                 &nbsp;
                             
-                                <a href="/tags/system">System</a>
+                                <a href="/tags/python">Python</a>
+                                &nbsp;
+                            
+                                <a href="/tags/hugo">Hugo</a>
                                 &nbsp;
                             
                         
@@ -334,9 +337,7 @@
                             
 
                             
-                            2 min
-                            
-                            34 s.
+                            28 s.
                         
                     </div>
                 </div>
@@ -346,54 +347,17 @@
                 
                 <div class="post-body" v-pre>
                 
-                    <h1 id="重装系统">重装系统</h1>
-<blockquote>
-<p>文中 PE 为优启通，推荐使用。</p>
+                    <blockquote>
+<p>利用 Python 新建 hugo 文章到指定文件夹</p>
 </blockquote>
-<h2 id="准备">准备：</h2>
-<ol>
-<li>
-<p>一个大于 8G 的 U 盘用于制作 PE 系统（注意备份，制作 PE 过程中会格式化 U 盘）。</p>
-<p><a href="https://www.upe.net/">优启通</a></p>
-</li>
-<li>
-<p>系统镜像</p>
-<p><a href="https://next.itellyou.cn/">原版,Itellyou</a></p>
-<p><a href="https://windsys.win/">精简,Windsys</a></p>
-<p><a href="https://www.iwin10.net/">精简,吻妻</a></p>
-</li>
-</ol>
-<h2 id="pe-制作">PE 制作</h2>
-<ol>
-<li>下载优启通，解压后启动软件。</li>
-<li>默认选 U 盘模式即可。</li>
-<li>确认即将制作的是你的 U 盘（拔出其余外接 U 盘、硬盘）。</li>
-<li>点全新制作即可开始制作了，如果你的优盘之前制作过优启通，这里点免格升级即可，数据不会丢失，直接升级到最新的优启通。</li>
-<li>提示操作完成即可。</li>
-</ol>
-<h2 id="重装系统-1">重装系统</h2>
-<ol>
-<li>将下载的镜像移入制作好的 U 盘。</li>
-<li>请将电脑关机，将 PE 优盘插入到电脑后开机。然后在开机后的几秒内，当出现开机画面，按下快捷启动热键<code>F12</code>（不同机型请查看下面快捷键列表）进入启动项列表，然后在列表中通过方向键选择 U 盘所在选项，一般会带 USB 字样或者是 U 盘的品牌名（Sandisk、Toshiba 之类），然后敲击回车可以进入 U 盘的 PE 菜单选择界面。</li>
-</ol>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/FQ2Ko5s8huB2zMEpMGiab4I8HunByuVtv6Mnr5XepeeFcYP649ich28j9ZowxNA0MlGVnnm0N0o1LfM86GoicRyfA/640?wx_fmt=png&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
-<ol>
-<li>进入优启通启动菜单选择界面，根据自身配置选择系统，以 Win 10 x64 为例。小键盘上下选择，回车确认。</li>
-<li>进 PE 系统后，运行桌面“DG 硬盘分区”工具。</li>
-</ol>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/FQ2Ko5s8huB2zMEpMGiab4I8HunByuVtvIyicWjZ5zhBBnuymEfTFfLQ7GodEbUAxlsr0P6VvXkiatJmic9bslDcAg/640?wx_fmt=png&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/FQ2Ko5s8huB2zMEpMGiab4I8HunByuVtvnskTwEqNr5VjvqXxqZH6G2yH3caX5GJe3s5DeeLhlFFU5TJtxFXFbA/640?wx_fmt=png&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
-<ol>
-<li>运行桌面“EIX 系统安装”工具。</li>
-<li>在工具窗口左边选择要恢复的镜像文件，右边选择要安装系统的目标分区，然后点击“一键恢复”。</li>
-</ol>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/FQ2Ko5s8huB2zMEpMGiab4I8HunByuVtv4KMvF0EuDAsict7Y7BDIbzYx5oVGiciceMaGeib0076DhicMGBQ9qltgeKw/640?wx_fmt=png&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
-<ol>
-<li>在弹出窗口中去掉“驱动调用”勾选，另外的选项保持默认即可“确认”执行。</li>
-<li>等待系统安装完成。</li>
-<li>重启电脑，进入系统（或创建用户界面）。</li>
-</ol>
-
+<h1 id="使用方式">使用方式</h1>
+<h2 id="1-设置文章的元数据">1. 设置文章的元数据</h2>
+<h2 id="2-指定hugo的文章目录路径">2. 指定Hugo的文章目录路径</h2>
+<h2 id="3-创建新的markdown文件">3. 创建新的Markdown文件</h2>
+<p>Hugo的文章目录路径默认为 content 文件夹</p>
+<p>文件名默认为元数据中的 title</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>在代码 --- 之后 <span style="color:#cd5555">&#34;&#34;&#34; 之上添加你文章的内容
+</span></span></span></code></pre></div>
                     
                     <HR width="100%" id="EOF">
 		    <p style="color:#777;">最后修改于 2023-05-09</p>
@@ -405,14 +369,14 @@
             <nav class="post-pagination">
 
                 
-                <a class="newer-posts" href="/rashida-tts/">
-			下回<br> Rashida TTS
+                <a class="newer-posts" href="/windows/rashida-tts/">
+			下回<br>Rashida TTS
                 </a>
                 
                 
                 
-                <a class="older-posts">
-			上回<br>这是最旧的文章了。
+                <a class="older-posts" href="/windows/win-%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/">
+			上回<br>Win 重装系统
                 </a>
                 
             </nav>
@@ -546,8 +510,8 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 						
 						
 							<li>
-								<a href="#%e9%87%8d%e8%a3%85%e7%b3%bb%e7%bb%9f" class="nav-重装系统">
-									重装系统
+								<a href="#%e4%bd%bf%e7%94%a8%e6%96%b9%e5%bc%8f" class="nav-使用方式">
+									使用方式
 								</a>
 							</li>
 						
@@ -570,8 +534,8 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 						
 						
 							<li>
-								<a href="#%e5%87%86%e5%a4%87" class="nav-准备">
-									准备：
+								<a href="#1-%e8%ae%be%e7%bd%ae%e6%96%87%e7%ab%a0%e7%9a%84%e5%85%83%e6%95%b0%e6%8d%ae" class="nav-1-设置文章的元数据">
+									1. 设置文章的元数据
 								</a>
 							</li>
 						
@@ -588,8 +552,8 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 						
 						
 							<li>
-								<a href="#pe-%e5%88%b6%e4%bd%9c" class="nav-pe-制作">
-									PE 制作
+								<a href="#2-%e6%8c%87%e5%ae%9ahugo%e7%9a%84%e6%96%87%e7%ab%a0%e7%9b%ae%e5%bd%95%e8%b7%af%e5%be%84" class="nav-2-指定hugo的文章目录路径">
+									2. 指定Hugo的文章目录路径
 								</a>
 							</li>
 						
@@ -606,8 +570,8 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 						
 						
 							<li>
-								<a href="#%e9%87%8d%e8%a3%85%e7%b3%bb%e7%bb%9f-1" class="nav-重装系统-1">
-									重装系统
+								<a href="#3-%e5%88%9b%e5%bb%ba%e6%96%b0%e7%9a%84markdown%e6%96%87%e4%bb%b6" class="nav-3-创建新的markdown文件">
+									3. 创建新的Markdown文件
 								</a>
 							</li>
 						
