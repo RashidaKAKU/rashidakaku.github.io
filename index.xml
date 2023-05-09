@@ -24,9 +24,9 @@
 &lt;blockquote&gt;
 &lt;p&gt;注意：TXT 编码格式需为 UTF8&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;基于 PYTTSX3 的文本转语音工具
-UI 为 TKINTER
-测试 43000 字符没有问题&lt;/p&gt;
+&lt;p&gt;基于 PYTTSX3 的文本转语音工具&lt;/p&gt;
+&lt;p&gt;UI 为 TKINTER&lt;/p&gt;
+&lt;p&gt;测试 43000 字符没有问题&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://rashida.cab:6901/uploads/2023/05/09/645a2e7a734a6.png&#34; alt=&#34;界面展示&#34;&gt;&lt;/p&gt;
 &lt;p&gt;B 站视频展示&lt;a href=&#34;https://www.bilibili.com/video/av442548077/&#34;&gt;https://www.bilibili.com/video/av442548077/&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;常见问题&#34;&gt;常见问题&lt;/h2&gt;
