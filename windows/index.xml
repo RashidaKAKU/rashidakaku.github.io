@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>System on Rashida-Blog</title>
-    <link>https://rashidakaku.github.io/tags/system/</link>
-    <description>Recent content in System on Rashida-Blog</description>
+    <title>Windows on Rashida-Blog</title>
+    <link>https://rashidakaku.github.io/windows/</link>
+    <description>Recent content in Windows on Rashida-Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>This is a customized copyright.</copyright>
-    <lastBuildDate>Tue, 09 May 2023 04:53:11 +0900</lastBuildDate><atom:link href="https://rashidakaku.github.io/tags/system/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 May 2023 04:53:11 +0900</lastBuildDate><atom:link href="https://rashidakaku.github.io/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Win 重装系统</title>
       <link>https://rashidakaku.github.io/windows/win-%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
