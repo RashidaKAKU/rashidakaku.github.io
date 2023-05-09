@@ -29,9 +29,9 @@ Ubuntu 系统可以通过安装 espeak 解决
       <pubDate>Tue, 09 May 2023 04:53:11 +0900</pubDate>
       
       <guid>https://rashidakaku.github.io/windows/hugo-new/</guid>
-      <description> 利用 Python 新建 hugo 文章到指定文件夹
-使用方式 1. 设置文章的元数据 2. 指定Hugo的文章目录路径 3. 创建新的Markdown文件 Hugo的文章目录路径默认为 content 文件夹
-文件名默认为元数据中的 title
+      <description> 利用 Python 新建 Hugo 文章到指定文件夹
+使用方式 1. 设置文章的元数据 2. 指定 Hugo 的文章目录路径 3. 创建新的 Markdown 文件 Hugo 的文章目录路径默认为 Content 文件夹
+文件名默认为元数据中的 Title
 在代码 --- 之后 &amp;#34;&amp;#34;&amp;#34; 之上添加你文章的内容 </description>
     </item>
     
