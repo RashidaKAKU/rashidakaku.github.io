@@ -29,10 +29,11 @@ Ubuntu 系统可以通过安装 espeak 解决
       <pubDate>Tue, 09 May 2023 04:53:11 +0900</pubDate>
       
       <guid>https://rashidakaku.github.io/windows/hugo-new/</guid>
-      <description> 利用 Python 新建 Hugo 文章到指定文件夹
+      <description>利用 Python 新建 Hugo 文章到指定文件夹
 使用方式 1. 设置文章的元数据 2. 指定 Hugo 的文章目录路径 3. 创建新的 Markdown 文件 Hugo 的文章目录路径默认为 Content 文件夹
 文件名默认为元数据中的 Title
-在代码 --- 之后 &amp;#34;&amp;#34;&amp;#34; 之上添加你文章的内容 </description>
+替换代码中的 % 占位符
+在代码 --- 之后 &amp;#34;&amp;#34;&amp;#34; 之上添加你文章的内容 import os from datetime import datetime # 设置文章的元数据 title = &amp;#34;%&amp;#34; # 文章标题 description = &amp;#34;%&amp;#34; # 文章描述 tags = [%] # 文章标签 categories = &amp;#34;%&amp;#34; # 文章分类 date = datetime.now().strftime(&amp;#34;%Y-%m-%dT%H:%M:%S+09:00&amp;#34;) # 文章创建时间 featured_image = &amp;#34;%&amp;#34; # 文章特色图片 # 生成Markdown内容 content = f&amp;#34;&amp;#34;&amp;#34;--- title: &amp;#34;{title}&amp;#34; description: &amp;#34;{description}&amp;#34; tags: {tags} categories: &amp;#34;{categories}&amp;#34; date: &amp;#34;{date}&amp;#34; featured_image: &amp;#34;{featured_image}&amp;#34; --- %%%%%%%%%%%%% &amp;#34;&amp;#34;&amp;#34; # 在上方 --- 之后 &amp;#34;&amp;#34;&amp;#34; 之上添加你文章的内容 # 指定Hugo的文章目录路径 hugo_content_dir = r&amp;#34;%%%%%%%完整路径%%%%%%&amp;#34; # 创建新的Markdown文件 slug = title.</description>
     </item>
     
     <item>
