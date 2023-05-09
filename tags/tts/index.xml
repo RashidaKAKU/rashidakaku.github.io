@@ -14,11 +14,11 @@
       <pubDate>Tue, 09 May 2023 20:24:05 +0900</pubDate>
       
       <guid>https://rashidakaku.github.io/rashida-tts/</guid>
-      <description>Rashida TTS 欢迎使用 注意：TXT编码格式需为UTF8
-基于PYTTSX3的文本转语音工具 UI为 tkinter 测试 43000 字符没有问题
-B站视频展示https://www.bilibili.com/video/av442548077/
-常见问题 .py 文件无法正常运行 一般是由于缺少运行库，可以尝试使用 pip install -r requirements.txt 解决
-Linux 系统缺少 espeak ArchLinux 以及基于此系统的发行版 Linux 用户可以通过 yay 安装 AUR 包 espeak 解决这个问题
+      <description>Rashida TTS 欢迎使用 注意：TXT 编码格式需为 UTF8
+基于 PYTTSX3 的文本转语音工具 UI 为 TKINTER 测试 43000 字符没有问题
+B 站视频展示https://www.bilibili.com/video/av442548077/
+常见问题 .py 文件无法正常运行 一般是由于缺少运行库，可以尝试使用 PIP 解决
+pip install -r requirements.txt Linux 系统缺少 espeak ArchLinux 以及基于此系统的发行版 Linux 用户可以通过 yay 安装 AUR 包 espeak 解决这个问题
 Ubuntu 系统可以通过安装 espeak 解决
 如果尚未解决，可以尝试重新安装 pyttsx3 模块</description>
     </item>
