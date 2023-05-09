@@ -21,12 +21,12 @@
         <guid>https://rashidakaku.github.io/posts/win-%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
         <description>Rashida-Blog https://rashidakaku.github.io/posts/win-%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/ -&lt;h1 id=&#34;重装系统&#34;&gt;重装系统&lt;/h1&gt;
 &lt;blockquote&gt;
-&lt;p&gt;以优启通为例&lt;/p&gt;
+&lt;p&gt;文中 PE 为优启通，推荐使用。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;准备&#34;&gt;准备：&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;一个大于 8G 的 U盘用于制作 PE 系统（注意备份，制作PE过程中会格式化 U盘）。&lt;/p&gt;
+&lt;p&gt;一个大于 8G 的 U 盘用于制作 PE 系统（注意备份，制作 PE 过程中会格式化 U 盘）。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.upe.net/&#34;&gt;优启通&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -36,18 +36,18 @@
 &lt;p&gt;&lt;a href=&#34;https://www.iwin10.net/&#34;&gt;精简,吻妻&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;pe制作&#34;&gt;PE制作&lt;/h2&gt;
+&lt;h2 id=&#34;pe-制作&#34;&gt;PE 制作&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;下载优启通，解压后启动软件。&lt;/li&gt;
-&lt;li&gt;默认选 U盘模式即可。&lt;/li&gt;
-&lt;li&gt;确认即将制作的是你的 U盘（拔出其余外接 U盘、硬盘）。&lt;/li&gt;
+&lt;li&gt;默认选 U 盘模式即可。&lt;/li&gt;
+&lt;li&gt;确认即将制作的是你的 U 盘（拔出其余外接 U 盘、硬盘）。&lt;/li&gt;
 &lt;li&gt;点全新制作即可开始制作了，如果你的优盘之前制作过优启通，这里点免格升级即可，数据不会丢失，直接升级到最新的优启通。&lt;/li&gt;
 &lt;li&gt;提示操作完成即可。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;重装系统-1&#34;&gt;重装系统&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;将下载的镜像移入制作好的 U盘。&lt;/li&gt;
-&lt;li&gt;请将电脑关机，将 PE 优盘插入到电脑后开机。然后在开机后的几秒内，当出现开机画面，按下快捷启动热键&lt;code&gt;F12&lt;/code&gt;（不同机型请查看下面快捷键列表）进入启动项列表，然后在列表中通过方向键选择 U盘所在选项，一般会带 USB 字样或者是 U盘的品牌名（Sandisk、Toshiba之类），然后敲击回车可以进入 U盘的 PE 菜单选择界面。&lt;/li&gt;
+&lt;li&gt;将下载的镜像移入制作好的 U 盘。&lt;/li&gt;
+&lt;li&gt;请将电脑关机，将 PE 优盘插入到电脑后开机。然后在开机后的几秒内，当出现开机画面，按下快捷启动热键&lt;code&gt;F12&lt;/code&gt;（不同机型请查看下面快捷键列表）进入启动项列表，然后在列表中通过方向键选择 U 盘所在选项，一般会带 USB 字样或者是 U 盘的品牌名（Sandisk、Toshiba 之类），然后敲击回车可以进入 U 盘的 PE 菜单选择界面。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/FQ2Ko5s8huB2zMEpMGiab4I8HunByuVtv6Mnr5XepeeFcYP649ich28j9ZowxNA0MlGVnnm0N0o1LfM86GoicRyfA/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;图片&#34;&gt;&lt;/p&gt;
 &lt;ol&gt;
