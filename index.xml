@@ -35,14 +35,26 @@
     -v $PWD/aria2-downloads:/downloads \
     p3terx/aria2-pro
 &lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;ariang-dockor-cli-部署&#34;&gt;AriaNG Dockor Cli 部署&lt;/h1&gt;
-&lt;p&gt;可以修改用户端口&lt;/p&gt;
+&lt;p&gt;可以修改用户端口
+可以在 Docker 面板中设置关联容器 Aria2&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;docker run -d \
     --name AriaNG \
     --restart unless-stopped \
     --log-opt max-size=1m \
     -p 6880:6880 \
     p3terx/ariang
-&lt;/code&gt;&lt;/pre&gt;- https://rashidakaku.github.io/docker/aria2-pro-ng/ - This is a customized copyright.</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;群晖使用-docker-cli-方法&#34;&gt;群晖使用 Docker Cli 方法&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;打开群晖控制面板&lt;/li&gt;
+&lt;li&gt;找到任务计划&lt;/li&gt;
+&lt;li&gt;新增计划任务-用户脚本&lt;/li&gt;
+&lt;li&gt;随意填写任务名称&lt;/li&gt;
+&lt;li&gt;用户角色选 Root&lt;/li&gt;
+&lt;li&gt;在脚本处粘贴 Docker Cli 并保存&lt;/li&gt;
+&lt;li&gt;运行脚本后删除&lt;/li&gt;
+&lt;li&gt;等待部署完成&lt;/li&gt;
+&lt;/ol&gt;
+- https://rashidakaku.github.io/docker/aria2-pro-ng/ - This is a customized copyright.</description>
         </item>
     
     

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>下载 on Rashida-Blog</title>
-    <link>https://rashidakaku.github.io/tags/%E4%B8%8B%E8%BD%BD/</link>
-    <description>Recent content in 下载 on Rashida-Blog</description>
+    <title>教程 on Rashida-Blog</title>
+    <link>https://rashidakaku.github.io/tags/%E6%95%99%E7%A8%8B/</link>
+    <description>Recent content in 教程 on Rashida-Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>This is a customized copyright.</copyright>
-    <lastBuildDate>Mon, 15 May 2023 05:53:11 +0900</lastBuildDate><atom:link href="https://rashidakaku.github.io/tags/%E4%B8%8B%E8%BD%BD/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 May 2023 05:53:11 +0900</lastBuildDate><atom:link href="https://rashidakaku.github.io/tags/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Aria2 下载器部署</title>
       <link>https://rashidakaku.github.io/docker/aria2-pro-ng/</link>

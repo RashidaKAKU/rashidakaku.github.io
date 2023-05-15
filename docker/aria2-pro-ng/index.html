@@ -193,6 +193,24 @@
 					
 				
 			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%be%a4%e6%99%96%e4%bd%bf%e7%94%a8-docker-cli-%e6%96%b9%e6%b3%95" class="nav-群晖使用-docker-cli-方法">
+									群晖使用 Docker Cli 方法
+								</a>
+							</li>
+						
+						
+					
+				
+			
 		</ul>
 	</div>
 
@@ -286,6 +304,9 @@
                                 <a href="/tags/%E4%B8%8B%E8%BD%BD">下载</a>
                                 &nbsp;
                             
+                                <a href="/tags/%E6%95%99%E7%A8%8B">教程</a>
+                                &nbsp;
+                            
                         
                         
                             <i class="material-icons" style="">schedule</i>
@@ -295,7 +316,7 @@
                             
 
                             
-                            24 s.
+                            47 s.
                         
                     </div>
                 </div>
@@ -321,14 +342,26 @@
     -v $PWD/aria2-downloads:/downloads \
     p3terx/aria2-pro
 </code></pre><h1 id="ariang-dockor-cli-部署">AriaNG Dockor Cli 部署</h1>
-<p>可以修改用户端口</p>
+<p>可以修改用户端口
+可以在 Docker 面板中设置关联容器 Aria2</p>
 <pre tabindex="0"><code>docker run -d \
     --name AriaNG \
     --restart unless-stopped \
     --log-opt max-size=1m \
     -p 6880:6880 \
     p3terx/ariang
-</code></pre>
+</code></pre><h1 id="群晖使用-docker-cli-方法">群晖使用 Docker Cli 方法</h1>
+<ol>
+<li>打开群晖控制面板</li>
+<li>找到任务计划</li>
+<li>新增计划任务-用户脚本</li>
+<li>随意填写任务名称</li>
+<li>用户角色选 Root</li>
+<li>在脚本处粘贴 Docker Cli 并保存</li>
+<li>运行脚本后删除</li>
+<li>等待部署完成</li>
+</ol>
+
                     
                     <HR width="100%" id="EOF">
 		    <p style="color:#777;">最后修改于 2023-05-15</p>
@@ -501,6 +534,24 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 							<li>
 								<a href="#ariang-dockor-cli-%e9%83%a8%e7%bd%b2" class="nav-ariang-dockor-cli-部署">
 									AriaNG Dockor Cli 部署
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%be%a4%e6%99%96%e4%bd%bf%e7%94%a8-docker-cli-%e6%96%b9%e6%b3%95" class="nav-群晖使用-docker-cli-方法">
+									群晖使用 Docker Cli 方法
 								</a>
 							</li>
 						
