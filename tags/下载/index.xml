@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>下载 on Rashida-Blog</title>
+    <link>https://rashidakaku.github.io/tags/%E4%B8%8B%E8%BD%BD/</link>
+    <description>Recent content in 下载 on Rashida-Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Tue, 09 May 2023 04:53:11 +0900</lastBuildDate><atom:link href="https://rashidakaku.github.io/tags/%E4%B8%8B%E8%BD%BD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aria2 下载器部署</title>
+      <link>https://rashidakaku.github.io/docker/aria2-pro-ng/</link>
+      <pubDate>Tue, 09 May 2023 04:53:11 +0900</pubDate>
+      
+      <guid>https://rashidakaku.github.io/docker/aria2-pro-ng/</guid>
+      <description>Aria2 Pro Dockor Cli 部署 需要修改用户路径，其余可不修改。
+docker run -d \ --name Aria2 \ --restart unless-stopped \ --log-opt max-size=1m \ --network host \ -e PUID=$UID \ -e PGID=$GID \ -e RPC_SECRET=&amp;lt;TOKEN&amp;gt; \ -e RPC_PORT=6800 \ -e LISTEN_PORT=6888 \ -v $PWD/aria2-config:/config \ -v $PWD/aria2-downloads:/downloads \ p3terx/aria2-pro AriaNG Dockor Cli 部署 可以修改用户端口
+docker run -d \ --name AriaNG \ --restart unless-stopped \ --log-opt max-size=1m \ -p 6880:6880 \ p3terx/ariang </description>
+    </item>
+    
+  </channel>
+</rss>

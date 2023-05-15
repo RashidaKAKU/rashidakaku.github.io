@@ -43,6 +43,40 @@
     
     
         <item>
+        <title>Aria2 下载器部署</title>
+        <link>https://rashidakaku.github.io/docker/aria2-pro-ng/</link>
+        <pubDate>Tue, 09 May 2023 04:53:11 +0900</pubDate>
+        
+        <guid>https://rashidakaku.github.io/docker/aria2-pro-ng/</guid>
+        <description>Rashida-Blog https://rashidakaku.github.io/docker/aria2-pro-ng/ -&lt;h1 id=&#34;aria2-pro-dockor-cli-部署&#34;&gt;Aria2 Pro Dockor Cli 部署&lt;/h1&gt;
+&lt;p&gt;需要修改用户路径，其余可不修改。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;docker run -d \
+    --name Aria2 \
+    --restart unless-stopped \
+    --log-opt max-size=1m \
+    --network host \
+    -e PUID=$UID \
+    -e PGID=$GID \
+    -e RPC_SECRET=&amp;lt;TOKEN&amp;gt; \
+    -e RPC_PORT=6800 \
+    -e LISTEN_PORT=6888 \
+    -v $PWD/aria2-config:/config \
+    -v $PWD/aria2-downloads:/downloads \
+    p3terx/aria2-pro
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;ariang-dockor-cli-部署&#34;&gt;AriaNG Dockor Cli 部署&lt;/h1&gt;
+&lt;p&gt;可以修改用户端口&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;docker run -d \
+    --name AriaNG \
+    --restart unless-stopped \
+    --log-opt max-size=1m \
+    -p 6880:6880 \
+    p3terx/ariang
+&lt;/code&gt;&lt;/pre&gt;- https://rashidakaku.github.io/docker/aria2-pro-ng/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
         <title>Hugo 新建文章</title>
         <link>https://rashidakaku.github.io/windows/hugo-new/</link>
         <pubDate>Tue, 09 May 2023 04:53:11 +0900</pubDate>
