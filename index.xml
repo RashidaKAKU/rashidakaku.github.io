@@ -44,6 +44,7 @@
     -p 6880:6880 \
     p3terx/ariang
 &lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;群晖使用-docker-cli-方法&#34;&gt;群晖使用 Docker Cli 方法&lt;/h1&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;打开群晖控制面板&lt;/li&gt;
 &lt;li&gt;找到任务计划&lt;/li&gt;
