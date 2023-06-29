@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>This is a customized copyright.</copyright>
-    <lastBuildDate>Mon, 15 May 2023 05:53:11 +0900</lastBuildDate><atom:link href="https://rashidakaku.github.io/tags/%E7%BE%A4%E6%99%96/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Jun 2023 05:53:11 +0900</lastBuildDate><atom:link href="https://rashidakaku.github.io/tags/%E7%BE%A4%E6%99%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker 自动更新</title>
+      <link>https://rashidakaku.github.io/docker/docker-%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/</link>
+      <pubDate>Thu, 29 Jun 2023 05:53:11 +0900</pubDate>
+      
+      <guid>https://rashidakaku.github.io/docker/docker-%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/</guid>
+      <description>！！！更新 Docker 可能会出现未知问题，请谨慎更新！！！
+快速启动 执行以下标准命令启动 Watch­tower 容器，并每 5 分钟一次检查所有容器的镜像是否为最新版，如发现镜像更新将会自动停止容器，删除容器，拉取最新镜像，在以之前启动容器的命令启动容器。
+docker run -d \ --name watchtower \ -v /var/run/docker.sock:/var/run/docker.sock \ containrrr/watchtower 清理旧镜像 镜像在更新后旧镜像标签会变为 none，长期自动更新会导致过多的 none 镜像占用空间，加入&amp;ndash;cleanup 参数可以在每次更新后自动删除 none 镜像。
+docker run -d \ --name watchtower \ --restart always \ -v /var/run/docker.sock:/var/run/docker.sock \ containrrr/watchtower \ --cleanup 指定容器更新 如无需自动更新所有稳定运行的容器，可以配置仅更新指定容器，只需要在命令后加上容器名：例如只更新 nginx 和 redis。 注意指定容器需填写 容器名，并非镜像名。由于部分容器启动时可能没有定义 &amp;ndash;name 参数，请执行 docker ps 查询核对容器名。
+docker run -d \ --name watchtower \ --restart always \ -v /var/run/docker.sock:/var/run/docker.sock \ containrrr/watchtower \ --cleanup \ nginx redis 配置自动更新频率 Watch­tower 默认每 5 分钟轮询一次，可以使用以下参数配置更新的频率。</description>
+    </item>
+    
     <item>
       <title>Aria2 下载器部署</title>
       <link>https://rashidakaku.github.io/docker/aria2-pro-ng/</link>
