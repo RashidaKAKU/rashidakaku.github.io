@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>群晖 on Rashida-Blog</title>
-    <link>https://rashidakaku.github.io/tags/%E7%BE%A4%E6%99%96/</link>
-    <description>Recent content in 群晖 on Rashida-Blog</description>
+    <title>Docker on Rashida-Blog</title>
+    <link>https://rashidakaku.github.io/categories/docker/</link>
+    <description>Recent content in Docker on Rashida-Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>This is a customized copyright.</copyright>
-    <lastBuildDate>Thu, 29 Jun 2023 05:53:11 +0900</lastBuildDate><atom:link href="https://rashidakaku.github.io/tags/%E7%BE%A4%E6%99%96/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Jun 2023 05:53:11 +0900</lastBuildDate><atom:link href="https://rashidakaku.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker 自动更新</title>
       <link>https://rashidakaku.github.io/docker/docker-%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/</link>

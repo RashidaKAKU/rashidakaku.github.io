@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-<title>Aria2 下载器部署</title>
+<title>Docker 自动更新</title>
 
 
 
@@ -10,26 +10,26 @@
 <meta name="google-site-verification" content="">
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 <meta content="telephone=no" name="format-detection">
-<meta name="description" content="Aria2 下载器 群晖Docker部署，带 UI 界面">
+<meta name="description" content="Watchtower - 自动更新 Docker 镜像与容器">
 <meta name="renderer" content="webkit">
 <meta name="theme-color" content="#ffffff">
 
 
 
-<meta property="og:title" content="Aria2 下载器部署" />
-<meta property="og:description" content="Aria2 下载器 群晖Docker部署，带 UI 界面" />
+<meta property="og:title" content="Docker 自动更新" />
+<meta property="og:description" content="Watchtower - 自动更新 Docker 镜像与容器" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://rashidakaku.github.io/docker/aria2-pro-ng/" /><meta property="article:section" content="Docker" />
-<meta property="article:published_time" content="2023-05-15T05:53:11+09:00" />
-<meta property="article:modified_time" content="2023-05-15T05:53:11+09:00" /><meta property="og:site_name" content="Rashida-Blog" />
+<meta property="og:url" content="https://rashidakaku.github.io/docker/docker-%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/" /><meta property="article:section" content="Docker" />
+<meta property="article:published_time" content="2023-06-29T05:53:11+09:00" />
+<meta property="article:modified_time" content="2023-06-29T05:53:11+09:00" /><meta property="og:site_name" content="Rashida-Blog" />
 
 
 
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Aria2 下载器部署"/>
-<meta name="twitter:description" content="Aria2 下载器 群晖Docker部署，带 UI 界面"/>
+<meta name="twitter:title" content="Docker 自动更新"/>
+<meta name="twitter:description" content="Watchtower - 自动更新 Docker 镜像与容器"/>
 
 
 
@@ -166,8 +166,8 @@
 						
 						
 							<li>
-								<a href="#aria2-pro-docker-cli-%e9%83%a8%e7%bd%b2" class="nav-aria2-pro-docker-cli-部署">
-									Aria2 Pro Docker Cli 部署
+								<a href="#%e5%bf%ab%e9%80%9f%e5%90%af%e5%8a%a8" class="nav-快速启动">
+									快速启动
 								</a>
 							</li>
 						
@@ -184,8 +184,8 @@
 						
 						
 							<li>
-								<a href="#ariang-docker-cli-%e9%83%a8%e7%bd%b2" class="nav-ariang-docker-cli-部署">
-									AriaNG Docker Cli 部署
+								<a href="#%e6%b8%85%e7%90%86%e6%97%a7%e9%95%9c%e5%83%8f" class="nav-清理旧镜像">
+									清理旧镜像
 								</a>
 							</li>
 						
@@ -202,8 +202,132 @@
 						
 						
 							<li>
-								<a href="#%e7%be%a4%e6%99%96%e4%bd%bf%e7%94%a8-docker-cli-%e6%96%b9%e6%b3%95" class="nav-群晖使用-docker-cli-方法">
-									群晖使用 Docker Cli 方法
+								<a href="#%e6%8c%87%e5%ae%9a%e5%ae%b9%e5%99%a8%e6%9b%b4%e6%96%b0" class="nav-指定容器更新">
+									指定容器更新
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e9%85%8d%e7%bd%ae%e8%87%aa%e5%8a%a8%e6%9b%b4%e6%96%b0%e9%a2%91%e7%8e%87" class="nav-配置自动更新频率">
+									配置自动更新频率
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e6%af%8f%e5%b0%8f%e6%97%b6%e6%9b%b4%e6%96%b0%e4%b8%80%e6%ac%a1" class="nav-每小时更新一次">
+									每小时更新一次
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e6%af%8f%e5%a4%a9%e5%87%8c%e6%99%a81%e7%82%b9%e6%9b%b4%e6%96%b0%e5%8c%97%e4%ba%ac%e6%97%b6%e9%97%b4" class="nav-每天凌晨1点更新北京时间">
+									每天凌晨1点更新（北京时间）
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e6%89%8b%e5%8a%a8%e6%9b%b4%e6%96%b0" class="nav-手动更新">
+									手动更新
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e6%89%8b%e5%8a%a8%e6%9b%b4%e6%96%b0%e6%89%80%e6%9c%89%e5%ae%b9%e5%99%a8" class="nav-手动更新所有容器">
+									手动更新所有容器
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e6%89%8b%e5%8a%a8%e6%9b%b4%e6%96%b0%e6%8c%87%e5%ae%9a%e5%ae%b9%e5%99%a8" class="nav-手动更新指定容器">
+									手动更新指定容器
 								</a>
 							</li>
 						
@@ -268,21 +392,21 @@
                 
                     
                     
-                    style="background-image: url('https://github.com/RashidaKAKU/BingW/blob/main/2023/6/wallpaper_20230628.jpg')"
+                    style="background-image: url('https://github.com/RashidaKAKU/BingW/blob/main/2023/6/wallpaper_20230601.jpg')"
                     
                 
             >
                 <div class="post-title">
-                    Aria2 下载器部署
+                    Docker 自动更新
                     
                     <div class="post-subtitle">
-                        Aria2 下载器 群晖Docker部署，带 UI 界面
+                        Watchtower - 自动更新 Docker 镜像与容器
                     </div>
                     
                     <div class="post-meta">
                         
                         <time itemprop="datePublished">
-                            2023-05-15 05:53
+                            2023-06-29 05:53
                         </time>
                         
 
@@ -301,9 +425,6 @@
                                 <a href="/tags/docker">Docker</a>
                                 &nbsp;
                             
-                                <a href="/tags/%E4%B8%8B%E8%BD%BD">下载</a>
-                                &nbsp;
-                            
                                 <a href="/tags/%E6%95%99%E7%A8%8B">教程</a>
                                 &nbsp;
                             
@@ -316,7 +437,9 @@
                             
 
                             
-                            47 s.
+                            3 min
+                            
+                            35 s.
                         
                     </div>
                 </div>
@@ -326,45 +449,89 @@
                 
                 <div class="post-body" v-pre>
                 
-                    <h1 id="aria2-pro-docker-cli-部署">Aria2 Pro Docker Cli 部署</h1>
-<p>需要修改用户路径，其余可不修改。</p>
-<pre tabindex="0"><code>docker run -d \
-    --name Aria2 \
-    --restart unless-stopped \
-    --log-opt max-size=1m \
-    --network host \
-    -e PUID=$UID \
-    -e PGID=$GID \
-    -e RPC_SECRET=&lt;TOKEN&gt; \
-    -e RPC_PORT=6800 \
-    -e LISTEN_PORT=6888 \
-    -v $PWD/aria2-config:/config \
-    -v $PWD/aria2-downloads:/downloads \
-    p3terx/aria2-pro
-</code></pre><h1 id="ariang-docker-cli-部署">AriaNG Docker Cli 部署</h1>
-<p>可以修改用户端口
-可以在 Docker 面板中设置关联容器 Aria2</p>
-<pre tabindex="0"><code>docker run -d \
-    --name AriaNG \
-    --restart unless-stopped \
-    --log-opt max-size=1m \
-    -p 6880:6880 \
-    p3terx/ariang
-</code></pre><h1 id="群晖使用-docker-cli-方法">群晖使用 Docker Cli 方法</h1>
-<ol>
-<li>打开群晖控制面板</li>
-<li>找到任务计划</li>
-<li>新增计划任务-用户脚本</li>
-<li>随意填写任务名称</li>
-<li>用户角色选 Root</li>
-<li>在脚本处粘贴 Docker Cli 并保存</li>
-<li>运行脚本后删除</li>
-<li>等待部署完成</li>
-</ol>
+                    <p>！！！更新 docker 可能会出现未知问题，请谨慎更新！！！</p>
+<h1 id="快速启动">快速启动</h1>
+<p>执行以下标准命令启动 Watch­tower 容器，并每 5 分钟一次检查所有容器的镜像是否为最新版，如发现镜像更新将会自动停止容器，删除容器，拉取最新镜像，在以之前启动容器的命令启动容器。</p>
+<p>···
+docker run -d <br>
+&ndash;name watchtower <br>
+-v /var/run/docker.sock:/var/run/docker.sock <br>
+containrrr/watchtower
+···</p>
+<h1 id="清理旧镜像">清理旧镜像</h1>
+<p>镜像在更新后旧镜像标签会变为none，长期自动更新会导致过多的none镜像占用空间，加入&ndash;cleanup参数可以在每次更新后自动删除none镜像。</p>
+<p>···
+docker run -d <br>
+&ndash;name watchtower <br>
+&ndash;restart always <br>
+-v /var/run/docker.sock:/var/run/docker.sock <br>
+containrrr/watchtower <br>
+&ndash;cleanup
+···</p>
+<h1 id="指定容器更新">指定容器更新</h1>
+<p>如无需自动更新所有稳定运行的容器，可以配置仅更新指定容器,只需要在命令后加上容器名：例如只更新nginx和redis。
+注意指定容器需填写 容器名，并非镜像名。由于部分容器启动时可能没有定义 &ndash;name 参数,请执行 docker ps 查询核对容器名。</p>
+<p>···
+docker run -d <br>
+&ndash;name watchtower <br>
+&ndash;restart always <br>
+-v /var/run/docker.sock:/var/run/docker.sock <br>
+containrrr/watchtower <br>
+&ndash;cleanup <br>
+nginx redis
+···</p>
+<h1 id="配置自动更新频率">配置自动更新频率</h1>
+<p>Watch­tower
+默认每 5 分钟轮询一次，可以使用以下参数配置更新的频率。</p>
+<ul>
+<li>&ndash;interval,-i 配置更新周期,默认300秒。</li>
+<li>&ndash;schedule,-s 配置定时更新，使用Cron表达式,例如 &ldquo;0 0 1 * * *&rdquo; 即每天凌晨1点更新。
+！！！当使用 -s 参数来配置定时更新时，由于容器内默认为 UTC 时间，上述设置的 凌晨1点 实际上是北京时间早上 9 点，可以通过加上 -e TZ=Asia/Shanghai 环境变量来定义时区，此时配置的时间则为北京时间。</li>
+</ul>
+<h2 id="每小时更新一次">每小时更新一次</h2>
+<p>···
+docker run -d <br>
+&ndash;name watchtower <br>
+&ndash;restart always <br>
+-v /var/run/docker.sock:/var/run/docker.sock <br>
+containrrr/watchtower <br>
+&ndash;cleanup <br>
+-i 3600
+···</p>
+<h2 id="每天凌晨1点更新北京时间">每天凌晨1点更新（北京时间）</h2>
+<p>···
+docker run -d <br>
+&ndash;name watchtower <br>
+&ndash;restart always <br>
+-e TZ=Asia/Shanghai <br>
+-v /var/run/docker.sock:/var/run/docker.sock <br>
+containrrr/watchtower <br>
+&ndash;cleanup <br>
+-s &ldquo;0 0 1 * * *&rdquo;
+···</p>
+<h1 id="手动更新">手动更新</h1>
+<p>使用手动更新的方式，运行一次Watch­tower容器来更新所需的容器，更新后会自动删除本次运行的Watch­tower容器：只需要加上&ndash;rm和&ndash;run-once参数即可，同时也可以配合以上指定容器或指定排除容器的参数来使用。</p>
+<h2 id="手动更新所有容器">手动更新所有容器</h2>
+<p>···
+docker run &ndash;rm <br>
+-v /var/run/docker.sock:/var/run/docker.sock <br>
+containrrr/watchtower <br>
+&ndash;cleanup <br>
+&ndash;run-once
+···</p>
+<h2 id="手动更新指定容器">手动更新指定容器</h2>
+<p>···
+docker run &ndash;rm <br>
+-v /var/run/docker.sock:/var/run/docker.sock <br>
+containrrr/watchtower <br>
+&ndash;cleanup <br>
+&ndash;run-once <br>
+nginx redis
+···</p>
 
                     
                     <HR width="100%" id="EOF">
-		    <p style="color:#777;">最后修改于 2023-05-15</p>
+		    <p style="color:#777;">最后修改于 2023-06-29</p>
                     
                 </div>
             </div>
@@ -373,14 +540,14 @@
             <nav class="post-pagination">
 
                 
-                <a class="newer-posts" href="/docker/docker-%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/">
-			下回<br>Docker 自动更新
+                <a class="newer-posts">
+			下回<br>已经到头啦。
                 </a>
                 
                 
                 
-                <a class="older-posts" href="/windows/rashida-tts/">
-			上回<br>Rashida TTS
+                <a class="older-posts" href="/docker/aria2-pro-ng/">
+			上回<br>Aria2 下载器部署
                 </a>
                 
             </nav>
@@ -514,8 +681,8 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 						
 						
 							<li>
-								<a href="#aria2-pro-docker-cli-%e9%83%a8%e7%bd%b2" class="nav-aria2-pro-docker-cli-部署">
-									Aria2 Pro Docker Cli 部署
+								<a href="#%e5%bf%ab%e9%80%9f%e5%90%af%e5%8a%a8" class="nav-快速启动">
+									快速启动
 								</a>
 							</li>
 						
@@ -532,8 +699,8 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 						
 						
 							<li>
-								<a href="#ariang-docker-cli-%e9%83%a8%e7%bd%b2" class="nav-ariang-docker-cli-部署">
-									AriaNG Docker Cli 部署
+								<a href="#%e6%b8%85%e7%90%86%e6%97%a7%e9%95%9c%e5%83%8f" class="nav-清理旧镜像">
+									清理旧镜像
 								</a>
 							</li>
 						
@@ -550,8 +717,132 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 						
 						
 							<li>
-								<a href="#%e7%be%a4%e6%99%96%e4%bd%bf%e7%94%a8-docker-cli-%e6%96%b9%e6%b3%95" class="nav-群晖使用-docker-cli-方法">
-									群晖使用 Docker Cli 方法
+								<a href="#%e6%8c%87%e5%ae%9a%e5%ae%b9%e5%99%a8%e6%9b%b4%e6%96%b0" class="nav-指定容器更新">
+									指定容器更新
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e9%85%8d%e7%bd%ae%e8%87%aa%e5%8a%a8%e6%9b%b4%e6%96%b0%e9%a2%91%e7%8e%87" class="nav-配置自动更新频率">
+									配置自动更新频率
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e6%af%8f%e5%b0%8f%e6%97%b6%e6%9b%b4%e6%96%b0%e4%b8%80%e6%ac%a1" class="nav-每小时更新一次">
+									每小时更新一次
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e6%af%8f%e5%a4%a9%e5%87%8c%e6%99%a81%e7%82%b9%e6%9b%b4%e6%96%b0%e5%8c%97%e4%ba%ac%e6%97%b6%e9%97%b4" class="nav-每天凌晨1点更新北京时间">
+									每天凌晨1点更新（北京时间）
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e6%89%8b%e5%8a%a8%e6%9b%b4%e6%96%b0" class="nav-手动更新">
+									手动更新
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e6%89%8b%e5%8a%a8%e6%9b%b4%e6%96%b0%e6%89%80%e6%9c%89%e5%ae%b9%e5%99%a8" class="nav-手动更新所有容器">
+									手动更新所有容器
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e6%89%8b%e5%8a%a8%e6%9b%b4%e6%96%b0%e6%8c%87%e5%ae%9a%e5%ae%b9%e5%99%a8" class="nav-手动更新指定容器">
+									手动更新指定容器
 								</a>
 							</li>
 						
