@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docker on Rashida-Blog</title>
-    <link>https://rashidakaku.github.io/categories/docker/</link>
-    <description>Recent content in Docker on Rashida-Blog</description>
+    <title>群晖，Docker on Rashida-Blog</title>
+    <link>https://rashidakaku.github.io/tags/%E7%BE%A4%E6%99%96docker/</link>
+    <description>Recent content in 群晖，Docker on Rashida-Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>This is a customized copyright.</copyright>
-    <lastBuildDate>Thu, 29 Jun 2023 05:53:11 +0900</lastBuildDate><atom:link href="https://rashidakaku.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Jun 2023 05:53:11 +0900</lastBuildDate><atom:link href="https://rashidakaku.github.io/tags/%E7%BE%A4%E6%99%96docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker 自动更新</title>
       <link>https://rashidakaku.github.io/docker/docker-%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/</link>
@@ -22,17 +22,6 @@
 指定容器更新 如无需自动更新所有稳定运行的容器，可以配置仅更新指定容器，只需要在命令后加上容器名：例如只更新 nginx 和 redis。 注意指定容器需填写 容器名，并非镜像名。由于部分容器启动时可能没有定义 &amp;ndash;name 参数，请执行 docker ps 查询核对容器名。
 ··· docker run -d &amp;ndash;name watchtower &amp;ndash;restart always -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower &amp;ndash;cleanup nginx redis ···
 配置自动更新频率 Watch­tower 默认每 5 分钟轮询一次，可以使用以下参数配置更新的频率。</description>
-    </item>
-    
-    <item>
-      <title>Aria2 下载器部署</title>
-      <link>https://rashidakaku.github.io/docker/aria2-pro-ng/</link>
-      <pubDate>Mon, 15 May 2023 05:53:11 +0900</pubDate>
-      
-      <guid>https://rashidakaku.github.io/docker/aria2-pro-ng/</guid>
-      <description>Aria2 Pro Docker Cli 部署 需要修改用户路径，其余可不修改。
-docker run -d \ --name Aria2 \ --restart unless-stopped \ --log-opt max-size=1m \ --network host \ -e PUID=$UID \ -e PGID=$GID \ -e RPC_SECRET=&amp;lt;TOKEN&amp;gt; \ -e RPC_PORT=6800 \ -e LISTEN_PORT=6888 \ -v $PWD/aria2-config:/config \ -v $PWD/aria2-downloads:/downloads \ p3terx/aria2-pro AriaNG Docker Cli 部署 可以修改用户端口 可以在 Docker 面板中设置关联容器 Aria2
-docker run -d \ --name AriaNG \ --restart unless-stopped \ --log-opt max-size=1m \ -p 6880:6880 \ p3terx/ariang 群晖使用 Docker Cli 方法 打开群晖控制面板 找到任务计划 新增计划任务-用户脚本 随意填写任务名称 用户角色选 Root 在脚本处粘贴 Docker Cli 并保存 运行脚本后删除 等待部署完成 </description>
     </item>
     
   </channel>

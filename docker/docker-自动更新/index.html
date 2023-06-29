@@ -262,8 +262,8 @@
 						
 						
 							<li>
-								<a href="#%e6%af%8f%e5%a4%a9%e5%87%8c%e6%99%a81%e7%82%b9%e6%9b%b4%e6%96%b0%e5%8c%97%e4%ba%ac%e6%97%b6%e9%97%b4" class="nav-每天凌晨1点更新北京时间">
-									每天凌晨1点更新（北京时间）
+								<a href="#%e6%af%8f%e5%a4%a9%e5%87%8c%e6%99%a8-1-%e7%82%b9%e6%9b%b4%e6%96%b0%e5%8c%97%e4%ba%ac%e6%97%b6%e9%97%b4" class="nav-每天凌晨-1-点更新北京时间">
+									每天凌晨 1 点更新（北京时间）
 								</a>
 							</li>
 						
@@ -419,10 +419,7 @@
                         
                             <i class="material-icons" style="">label</i>
                             
-                                <a href="/tags/%E7%BE%A4%E6%99%96">群晖</a>
-                                &nbsp;
-                            
-                                <a href="/tags/docker">Docker</a>
+                                <a href="/tags/%E7%BE%A4%E6%99%96docker">群晖，Docker</a>
                                 &nbsp;
                             
                                 <a href="/tags/%E6%95%99%E7%A8%8B">教程</a>
@@ -439,7 +436,7 @@
                             
                             3 min
                             
-                            35 s.
+                            31 s.
                         
                     </div>
                 </div>
@@ -449,7 +446,7 @@
                 
                 <div class="post-body" v-pre>
                 
-                    <p>！！！更新 docker 可能会出现未知问题，请谨慎更新！！！</p>
+                    <p>！！！更新 Docker 可能会出现未知问题，请谨慎更新！！！</p>
 <h1 id="快速启动">快速启动</h1>
 <p>执行以下标准命令启动 Watch­tower 容器，并每 5 分钟一次检查所有容器的镜像是否为最新版，如发现镜像更新将会自动停止容器，删除容器，拉取最新镜像，在以之前启动容器的命令启动容器。</p>
 <p>···
@@ -459,7 +456,7 @@ docker run -d <br>
 containrrr/watchtower
 ···</p>
 <h1 id="清理旧镜像">清理旧镜像</h1>
-<p>镜像在更新后旧镜像标签会变为none，长期自动更新会导致过多的none镜像占用空间，加入&ndash;cleanup参数可以在每次更新后自动删除none镜像。</p>
+<p>镜像在更新后旧镜像标签会变为 none，长期自动更新会导致过多的 none 镜像占用空间，加入&ndash;cleanup 参数可以在每次更新后自动删除 none 镜像。</p>
 <p>···
 docker run -d <br>
 &ndash;name watchtower <br>
@@ -469,8 +466,8 @@ containrrr/watchtower <br>
 &ndash;cleanup
 ···</p>
 <h1 id="指定容器更新">指定容器更新</h1>
-<p>如无需自动更新所有稳定运行的容器，可以配置仅更新指定容器,只需要在命令后加上容器名：例如只更新nginx和redis。
-注意指定容器需填写 容器名，并非镜像名。由于部分容器启动时可能没有定义 &ndash;name 参数,请执行 docker ps 查询核对容器名。</p>
+<p>如无需自动更新所有稳定运行的容器，可以配置仅更新指定容器，只需要在命令后加上容器名：例如只更新 nginx 和 redis。
+注意指定容器需填写 容器名，并非镜像名。由于部分容器启动时可能没有定义 &ndash;name 参数，请执行 docker ps 查询核对容器名。</p>
 <p>···
 docker run -d <br>
 &ndash;name watchtower <br>
@@ -484,9 +481,9 @@ nginx redis
 <p>Watch­tower
 默认每 5 分钟轮询一次，可以使用以下参数配置更新的频率。</p>
 <ul>
-<li>&ndash;interval,-i 配置更新周期,默认300秒。</li>
-<li>&ndash;schedule,-s 配置定时更新，使用Cron表达式,例如 &ldquo;0 0 1 * * *&rdquo; 即每天凌晨1点更新。
-！！！当使用 -s 参数来配置定时更新时，由于容器内默认为 UTC 时间，上述设置的 凌晨1点 实际上是北京时间早上 9 点，可以通过加上 -e TZ=Asia/Shanghai 环境变量来定义时区，此时配置的时间则为北京时间。</li>
+<li>&ndash;interval,-i 配置更新周期，默认 300 秒。</li>
+<li>&ndash;schedule,-s 配置定时更新，使用 Cron 表达式，例如 &ldquo;0 0 1 * * *&rdquo; 即每天凌晨 1 点更新。
+！！！当使用 -s 参数来配置定时更新时，由于容器内默认为 UTC 时间，上述设置的 凌晨 1 点 实际上是北京时间早上 9 点，可以通过加上 -e TZ=Asia/Shanghai 环境变量来定义时区，此时配置的时间则为北京时间。</li>
 </ul>
 <h2 id="每小时更新一次">每小时更新一次</h2>
 <p>···
@@ -498,7 +495,7 @@ containrrr/watchtower <br>
 &ndash;cleanup <br>
 -i 3600
 ···</p>
-<h2 id="每天凌晨1点更新北京时间">每天凌晨1点更新（北京时间）</h2>
+<h2 id="每天凌晨-1-点更新北京时间">每天凌晨 1 点更新（北京时间）</h2>
 <p>···
 docker run -d <br>
 &ndash;name watchtower <br>
@@ -510,7 +507,7 @@ containrrr/watchtower <br>
 -s &ldquo;0 0 1 * * *&rdquo;
 ···</p>
 <h1 id="手动更新">手动更新</h1>
-<p>使用手动更新的方式，运行一次Watch­tower容器来更新所需的容器，更新后会自动删除本次运行的Watch­tower容器：只需要加上&ndash;rm和&ndash;run-once参数即可，同时也可以配合以上指定容器或指定排除容器的参数来使用。</p>
+<p>使用手动更新的方式，运行一次 Watch­tower 容器来更新所需的容器，更新后会自动删除本次运行的 Watch­tower 容器：只需要加上&ndash;rm 和&ndash;run-once 参数即可，同时也可以配合以上指定容器或指定排除容器的参数来使用。</p>
 <h2 id="手动更新所有容器">手动更新所有容器</h2>
 <p>···
 docker run &ndash;rm <br>
@@ -777,8 +774,8 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 						
 						
 							<li>
-								<a href="#%e6%af%8f%e5%a4%a9%e5%87%8c%e6%99%a81%e7%82%b9%e6%9b%b4%e6%96%b0%e5%8c%97%e4%ba%ac%e6%97%b6%e9%97%b4" class="nav-每天凌晨1点更新北京时间">
-									每天凌晨1点更新（北京时间）
+								<a href="#%e6%af%8f%e5%a4%a9%e5%87%8c%e6%99%a8-1-%e7%82%b9%e6%9b%b4%e6%96%b0%e5%8c%97%e4%ba%ac%e6%97%b6%e9%97%b4" class="nav-每天凌晨-1-点更新北京时间">
+									每天凌晨 1 点更新（北京时间）
 								</a>
 							</li>
 						

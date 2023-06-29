@@ -19,7 +19,7 @@
         <pubDate>Thu, 29 Jun 2023 05:53:11 +0900</pubDate>
         
         <guid>https://rashidakaku.github.io/docker/docker-%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/</guid>
-        <description>Rashida-Blog https://rashidakaku.github.io/docker/docker-%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/ -&lt;p&gt;！！！更新 docker 可能会出现未知问题，请谨慎更新！！！&lt;/p&gt;
+        <description>Rashida-Blog https://rashidakaku.github.io/docker/docker-%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/ -&lt;p&gt;！！！更新 Docker 可能会出现未知问题，请谨慎更新！！！&lt;/p&gt;
 &lt;h1 id=&#34;快速启动&#34;&gt;快速启动&lt;/h1&gt;
 &lt;p&gt;执行以下标准命令启动 Watch­tower 容器，并每 5 分钟一次检查所有容器的镜像是否为最新版，如发现镜像更新将会自动停止容器，删除容器，拉取最新镜像，在以之前启动容器的命令启动容器。&lt;/p&gt;
 &lt;p&gt;···
@@ -29,7 +29,7 @@ docker run -d &lt;br&gt;
 containrrr/watchtower
 ···&lt;/p&gt;
 &lt;h1 id=&#34;清理旧镜像&#34;&gt;清理旧镜像&lt;/h1&gt;
-&lt;p&gt;镜像在更新后旧镜像标签会变为none，长期自动更新会导致过多的none镜像占用空间，加入&amp;ndash;cleanup参数可以在每次更新后自动删除none镜像。&lt;/p&gt;
+&lt;p&gt;镜像在更新后旧镜像标签会变为 none，长期自动更新会导致过多的 none 镜像占用空间，加入&amp;ndash;cleanup 参数可以在每次更新后自动删除 none 镜像。&lt;/p&gt;
 &lt;p&gt;···
 docker run -d &lt;br&gt;
 &amp;ndash;name watchtower &lt;br&gt;
@@ -39,8 +39,8 @@ containrrr/watchtower &lt;br&gt;
 &amp;ndash;cleanup
 ···&lt;/p&gt;
 &lt;h1 id=&#34;指定容器更新&#34;&gt;指定容器更新&lt;/h1&gt;
-&lt;p&gt;如无需自动更新所有稳定运行的容器，可以配置仅更新指定容器,只需要在命令后加上容器名：例如只更新nginx和redis。
-注意指定容器需填写 容器名，并非镜像名。由于部分容器启动时可能没有定义 &amp;ndash;name 参数,请执行 docker ps 查询核对容器名。&lt;/p&gt;
+&lt;p&gt;如无需自动更新所有稳定运行的容器，可以配置仅更新指定容器，只需要在命令后加上容器名：例如只更新 nginx 和 redis。
+注意指定容器需填写 容器名，并非镜像名。由于部分容器启动时可能没有定义 &amp;ndash;name 参数，请执行 docker ps 查询核对容器名。&lt;/p&gt;
 &lt;p&gt;···
 docker run -d &lt;br&gt;
 &amp;ndash;name watchtower &lt;br&gt;
@@ -54,9 +54,9 @@ nginx redis
 &lt;p&gt;Watch­tower
 默认每 5 分钟轮询一次，可以使用以下参数配置更新的频率。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&amp;ndash;interval,-i 配置更新周期,默认300秒。&lt;/li&gt;
-&lt;li&gt;&amp;ndash;schedule,-s 配置定时更新，使用Cron表达式,例如 &amp;ldquo;0 0 1 * * *&amp;rdquo; 即每天凌晨1点更新。
-！！！当使用 -s 参数来配置定时更新时，由于容器内默认为 UTC 时间，上述设置的 凌晨1点 实际上是北京时间早上 9 点，可以通过加上 -e TZ=Asia/Shanghai 环境变量来定义时区，此时配置的时间则为北京时间。&lt;/li&gt;
+&lt;li&gt;&amp;ndash;interval,-i 配置更新周期，默认 300 秒。&lt;/li&gt;
+&lt;li&gt;&amp;ndash;schedule,-s 配置定时更新，使用 Cron 表达式，例如 &amp;ldquo;0 0 1 * * *&amp;rdquo; 即每天凌晨 1 点更新。
+！！！当使用 -s 参数来配置定时更新时，由于容器内默认为 UTC 时间，上述设置的 凌晨 1 点 实际上是北京时间早上 9 点，可以通过加上 -e TZ=Asia/Shanghai 环境变量来定义时区，此时配置的时间则为北京时间。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;每小时更新一次&#34;&gt;每小时更新一次&lt;/h2&gt;
 &lt;p&gt;···
@@ -68,7 +68,7 @@ containrrr/watchtower &lt;br&gt;
 &amp;ndash;cleanup &lt;br&gt;
 -i 3600
 ···&lt;/p&gt;
-&lt;h2 id=&#34;每天凌晨1点更新北京时间&#34;&gt;每天凌晨1点更新（北京时间）&lt;/h2&gt;
+&lt;h2 id=&#34;每天凌晨-1-点更新北京时间&#34;&gt;每天凌晨 1 点更新（北京时间）&lt;/h2&gt;
 &lt;p&gt;···
 docker run -d &lt;br&gt;
 &amp;ndash;name watchtower &lt;br&gt;
@@ -80,7 +80,7 @@ containrrr/watchtower &lt;br&gt;
 -s &amp;ldquo;0 0 1 * * *&amp;rdquo;
 ···&lt;/p&gt;
 &lt;h1 id=&#34;手动更新&#34;&gt;手动更新&lt;/h1&gt;
-&lt;p&gt;使用手动更新的方式，运行一次Watch­tower容器来更新所需的容器，更新后会自动删除本次运行的Watch­tower容器：只需要加上&amp;ndash;rm和&amp;ndash;run-once参数即可，同时也可以配合以上指定容器或指定排除容器的参数来使用。&lt;/p&gt;
+&lt;p&gt;使用手动更新的方式，运行一次 Watch­tower 容器来更新所需的容器，更新后会自动删除本次运行的 Watch­tower 容器：只需要加上&amp;ndash;rm 和&amp;ndash;run-once 参数即可，同时也可以配合以上指定容器或指定排除容器的参数来使用。&lt;/p&gt;
 &lt;h2 id=&#34;手动更新所有容器&#34;&gt;手动更新所有容器&lt;/h2&gt;
 &lt;p&gt;···
 docker run &amp;ndash;rm &lt;br&gt;
