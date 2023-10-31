@@ -10,7 +10,7 @@
 <meta property='og:description' content='Aria2 下载器 群晖Docker部署，带 UI 界面'>
 <meta property='og:url' content='https://rashidakaku.github.io/p/aria2-%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%83%A8%E7%BD%B2/'>
 <meta property='og:site_name' content='Rashida&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='群晖' /><meta property='article:tag' content='Docker' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='下载' /><meta property='article:published_time' content='2023-06-27T05:53:11&#43;09:00'/><meta property='article:modified_time' content='2023-10-30T01:06:02&#43;00:00'/><meta property='og:image' content='https://photo-1307600264.cos.ap-hongkong.myqcloud.com/Bing/2023-06/wallpaper_20230628.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='群晖' /><meta property='article:tag' content='Docker' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='下载' /><meta property='article:published_time' content='2023-06-27T05:53:11&#43;09:00'/><meta property='article:modified_time' content='2023-10-31T01:05:56&#43;00:00'/><meta property='og:image' content='https://photo-1307600264.cos.ap-hongkong.myqcloud.com/Bing/2023-06/wallpaper_20230628.jpg' />
 <meta name="twitter:title" content="Aria2 下载器部署">
 <meta name="twitter:description" content="Aria2 下载器 群晖Docker部署，带 UI 界面"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://photo-1307600264.cos.ap-hongkong.myqcloud.com/Bing/2023-06/wallpaper_20230628.jpg' />
@@ -356,19 +356,19 @@
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker run -d \
-</span></span><span class="line"><span class="cl">    --name Aria2 \
-</span></span><span class="line"><span class="cl">    --restart unless-stopped \
-</span></span><span class="line"><span class="cl">    --log-opt max-size=1m \
-</span></span><span class="line"><span class="cl">    --network host \
-</span></span><span class="line"><span class="cl">    -e PUID=$UID \
-</span></span><span class="line"><span class="cl">    -e PGID=$GID \
-</span></span><span class="line"><span class="cl">    -e RPC_SECRET=&lt;TOKEN&gt; \
-</span></span><span class="line"><span class="cl">    -e RPC_PORT=6800 \
-</span></span><span class="line"><span class="cl">    -e LISTEN_PORT=6888 \
-</span></span><span class="line"><span class="cl">    -v $PWD/aria2-config:/config \
-</span></span><span class="line"><span class="cl">    -v $PWD/aria2-downloads:/downloads \
-</span></span><span class="line"><span class="cl">    p3terx/aria2-pro
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">d</span> \
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">name</span> <span class="n">Aria2</span> \
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">restart</span> <span class="n">unless</span><span class="o">-</span><span class="n">stopped</span> \
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="nb">log</span><span class="o">-</span><span class="n">opt</span> <span class="nb">max</span><span class="o">-</span><span class="n">size</span><span class="o">=</span><span class="mi">1</span><span class="n">m</span> \
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">network</span> <span class="n">host</span> \
+</span></span><span class="line"><span class="cl">    <span class="o">-</span><span class="n">e</span> <span class="n">PUID</span><span class="o">=$</span><span class="n">UID</span> \
+</span></span><span class="line"><span class="cl">    <span class="o">-</span><span class="n">e</span> <span class="n">PGID</span><span class="o">=$</span><span class="n">GID</span> \
+</span></span><span class="line"><span class="cl">    <span class="o">-</span><span class="n">e</span> <span class="n">RPC_SECRET</span><span class="o">=&lt;</span><span class="n">TOKEN</span><span class="o">&gt;</span> \
+</span></span><span class="line"><span class="cl">    <span class="o">-</span><span class="n">e</span> <span class="n">RPC_PORT</span><span class="o">=</span><span class="mi">6800</span> \
+</span></span><span class="line"><span class="cl">    <span class="o">-</span><span class="n">e</span> <span class="n">LISTEN_PORT</span><span class="o">=</span><span class="mi">6888</span> \
+</span></span><span class="line"><span class="cl">    <span class="o">-</span><span class="n">v</span> <span class="o">$</span><span class="n">PWD</span><span class="o">/</span><span class="n">aria2</span><span class="o">-</span><span class="n">config</span><span class="p">:</span><span class="o">/</span><span class="n">config</span> \
+</span></span><span class="line"><span class="cl">    <span class="o">-</span><span class="n">v</span> <span class="o">$</span><span class="n">PWD</span><span class="o">/</span><span class="n">aria2</span><span class="o">-</span><span class="n">downloads</span><span class="p">:</span><span class="o">/</span><span class="n">downloads</span> \
+</span></span><span class="line"><span class="cl">    <span class="n">p3terx</span><span class="o">/</span><span class="n">aria2</span><span class="o">-</span><span class="n">pro</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="ariang-docker-cli-部署">AriaNG Docker Cli 部署</h1>
@@ -444,7 +444,7 @@
 
 
         <span>
-            最后更新于 Oct 30, 2023 01:06 UTC
+            最后更新于 Oct 31, 2023 01:05 UTC
         </span>
     </section></footer>
 
