@@ -6,7 +6,82 @@
         <description>Recent content in Win on Rashida&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 09 May 2023 20:24:05 +0900</lastBuildDate><atom:link href="https://rashidakaku.github.io/tags/win/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 03 Dec 2023 16:47:59 +0900</lastBuildDate><atom:link href="https://rashidakaku.github.io/tags/win/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Immich 群晖相册替代</title>
+        <link>https://rashidakaku.github.io/p/immich-%E7%BE%A4%E6%99%96%E7%9B%B8%E5%86%8C%E6%9B%BF%E4%BB%A3/</link>
+        <pubDate>Sun, 03 Dec 2023 16:47:59 +0900</pubDate>
+        
+        <guid>https://rashidakaku.github.io/p/immich-%E7%BE%A4%E6%99%96%E7%9B%B8%E5%86%8C%E6%9B%BF%E4%BB%A3/</guid>
+        <description>&lt;img src="https://rashida.cab:5065/i/2023/12/03/pambft.jpg" alt="Featured image of post Immich 群晖相册替代" /&gt;&lt;h1 id=&#34;群晖-container-manager下面简称-cm-部署教程&#34;&gt;群晖 Container Manager（下面简称 CM） 部署教程。&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://immich.app/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;项目官方地址&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;打开群晖 CM 选择项目选项。
+选择新建项目。
+填写好项目名称以及项目地址。&lt;/p&gt;
+&lt;h2 id=&#34;创建-docker-compose-代码如下&#34;&gt;创建 Docker compose 代码如下&lt;/h2&gt;
+&lt;p&gt;···yaml
+version: &amp;ldquo;2.1&amp;rdquo;
+services:
+immich:
+image: ghcr.io/imagegenius/immich:latest
+container_name: immich
+environment:
+- PUID=0
+- PGID=0
+- TZ=Asia/Shanghai
+- DB_HOSTNAME=填写你自己的 localhost 地址
+- DB_USERNAME=postgres
+- DB_PASSWORD=postgres
+- DB_DATABASE_NAME=immich
+- REDIS_HOSTNAME=填写你自己的 localhost 地址
+- DISABLE_MACHINE_LEANRNING=false
+- DISABLE_TYPESENSE=false
+- DB_PORT=5668
+- REDIS_PORT=6332
+- REDIS_PASSWORD=
+- CUDA_ACCELERATION=false
+volumes:
+- 实际存储地址/config:/config
+- 实际存储地址/Photo:/photos
+- 实际存储地址/machine:/config/machine-learning
+ports:
+- 端口号:8080
+restart: unless-stopped
+redis:
+image: redis
+ports:
+- 6332（上方变量 REDIS_PORT=6332 保持一致）:6379
+container_name: redis
+postgres14:
+image: postgres:14
+ports:
+- 5668（上方变量 DB_PORT=5668 保持一致）:5432
+container_name: postgres14
+environment:
+POSTGRES_USER: postgres
+POSTGRES_PASSWORD: postgres
+POSTGRES_DB: immich
+volumes:
+- /volume1/docker/immich/db:/var/lib/postgresql/data&lt;/p&gt;
+&lt;h1 id=&#34;更新-immich&#34;&gt;更新 Immich&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意服务器版本和 APP 版本要保持一致！！否则无法使用 APP。
+先在项目中停用 Immich。
+打开群晖 SSH。
+使用链接工具链接后 sudo -i 获取管理员权限。
+cd 命令跳转到你 compose yaml 文件存储位置。
+使用命令开始更新&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;docker-compose-pull&#34;&gt;docker-compose pull&lt;/h2&gt;
+&lt;p&gt;更新后回到群晖 CM 找到容器 之前创建的 Immich容器。
+右键复制设置然后清除就容器的端口号，在复制后的新容器中填写。
+启动 CM 项目，打开Immich 网页端。
+如果没有问题且更新到最新版，就可以删除旧容器正常使用了。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Rashida TTS</title>
         <link>https://rashidakaku.github.io/p/rashida-tts/</link>
         <pubDate>Tue, 09 May 2023 20:24:05 +0900</pubDate>
