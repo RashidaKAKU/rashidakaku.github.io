@@ -551,7 +551,7 @@ cd 命令跳转到你 compose yaml 文件存储位置。
 &lt;li&gt;将下载的镜像移入制作好的 U 盘。&lt;/li&gt;
 &lt;li&gt;请将电脑关机，将 PE 优盘插入到电脑后开机。然后在开机后的几秒内，当出现开机画面，按下快捷启动热键&lt;code&gt;F12&lt;/code&gt;（不同机型请查看下面快捷键列表）进入启动项列表，然后在列表中通过方向键选择 U 盘所在选项，一般会带 USB 字样或者是 U 盘的品牌名（Sandisk、Toshiba 之类），然后敲击回车可以进入 U 盘的 PE 菜单选择界面。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/FQ2Ko5s8huB2zMEpMGiab4I8HunByuVtv6Mnr5XepeeFcYP649ich28j9ZowxNA0MlGVnnm0N0o1LfM86GoicRyfA/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34;
+&lt;p&gt;&lt;img src=&#34;https://rashida.cab:5065/i/2023/12/03/qm76xz.png&#34;
 	
 	
 	
@@ -562,47 +562,27 @@ cd 命令跳转到你 compose yaml 文件存储位置。
 	
 &gt;&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;进入优启通启动菜单选择界面，根据自身配置选择系统，以 Win 10 x64 为例。小键盘上下选择，回车确认。&lt;/li&gt;
-&lt;li&gt;进 PE 系统后，运行桌面“DG 硬盘分区”工具。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/FQ2Ko5s8huB2zMEpMGiab4I8HunByuVtvIyicWjZ5zhBBnuymEfTFfLQ7GodEbUAxlsr0P6VvXkiatJmic9bslDcAg/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;图片&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/FQ2Ko5s8huB2zMEpMGiab4I8HunByuVtvnskTwEqNr5VjvqXxqZH6G2yH3caX5GJe3s5DeeLhlFFU5TJtxFXFbA/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;图片&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;运行桌面“EIX 系统安装”工具。&lt;/li&gt;
-&lt;li&gt;在工具窗口左边选择要恢复的镜像文件，右边选择要安装系统的目标分区，然后点击“一键恢复”。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/FQ2Ko5s8huB2zMEpMGiab4I8HunByuVtv4KMvF0EuDAsict7Y7BDIbzYx5oVGiciceMaGeib0076DhicMGBQ9qltgeKw/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;图片&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;在弹出窗口中去掉“驱动调用”勾选，另外的选项保持默认即可“确认”执行。&lt;/li&gt;
-&lt;li&gt;等待系统安装完成。&lt;/li&gt;
-&lt;li&gt;重启电脑，进入系统（或创建用户界面）。&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入优启通启动菜单选择界面，根据自身配置选择系统，以 Win 10 x64 为例。小键盘上下选择，回车确认。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进 PE 系统后，运行桌面“DG 硬盘分区”工具。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;运行桌面“EIX 系统安装”工具。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在工具窗口左边选择要恢复的镜像文件，右边选择要安装系统的目标分区，然后点击“一键恢复”。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在弹出窗口中去掉“驱动调用”勾选，另外的选项保持默认即可“确认”执行。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;等待系统安装完成。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重启电脑，进入系统（或创建用户界面）。&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 </description>
         </item>
