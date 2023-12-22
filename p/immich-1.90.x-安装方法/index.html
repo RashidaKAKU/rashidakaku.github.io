@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='利用 Python 新建文章到指定文件夹'>
-<title>Hugo 新建文章</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Docker 部署的相册管理软件 1.90.x 安装方法'>
+<title>Immich 1.90.x 安装方法</title>
 
-<link rel='canonical' href='https://rashidakaku.github.io/p/hugo-%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0/'>
+<link rel='canonical' href='https://rashidakaku.github.io/p/immich-1.90.x-%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/'>
 
-<link rel="stylesheet" href="/scss/style.min.ff300df33b80e2ac49809c825614392ed1c7b27591d65d3c4043602cd162e25f.css"><meta property='og:title' content='Hugo 新建文章'>
-<meta property='og:description' content='利用 Python 新建文章到指定文件夹'>
-<meta property='og:url' content='https://rashidakaku.github.io/p/hugo-%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0/'>
+<link rel="stylesheet" href="/scss/style.min.ff300df33b80e2ac49809c825614392ed1c7b27591d65d3c4043602cd162e25f.css"><meta property='og:title' content='Immich 1.90.x 安装方法'>
+<meta property='og:description' content='Docker 部署的相册管理软件 1.90.x 安装方法'>
+<meta property='og:url' content='https://rashidakaku.github.io/p/immich-1.90.x-%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/'>
 <meta property='og:site_name' content='Rashida&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Win' /><meta property='article:tag' content='Python' /><meta property='article:tag' content='Hugo' /><meta property='article:published_time' content='2023-05-09T04:53:11&#43;09:00'/><meta property='article:modified_time' content='2023-12-22T19:38:59&#43;00:00'/><meta property='og:image' content='https://photo-1307600264.cos.ap-hongkong.myqcloud.com/Bing/2023-06/wallpaper_20230607.jpg' />
-<meta name="twitter:title" content="Hugo 新建文章">
-<meta name="twitter:description" content="利用 Python 新建文章到指定文件夹"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://photo-1307600264.cos.ap-hongkong.myqcloud.com/Bing/2023-06/wallpaper_20230607.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Win' /><meta property='article:tag' content='Docker' /><meta property='article:published_time' content='2023-12-22T16:47:59&#43;09:00'/><meta property='article:modified_time' content='2023-12-22T19:38:59&#43;00:00'/><meta property='og:image' content='https://rashida.cab:5065/i/2023/12/23/pa4lk.jpg' />
+<meta name="twitter:title" content="Immich 1.90.x 安装方法">
+<meta name="twitter:description" content="Docker 部署的相册管理软件 1.90.x 安装方法"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://rashida.cab:5065/i/2023/12/23/pa4lk.jpg' />
     </head>
     <body class="
     article-page
@@ -276,9 +276,13 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#1-设置文章的元数据">1. 设置文章的元数据</a></li>
-    <li><a href="#2-指定-hugo-的文章目录路径">2. 指定 Hugo 的文章目录路径</a></li>
-    <li><a href="#3-创建新的-markdown-文件">3. 创建新的 Markdown 文件</a></li>
+    <li><a href="#准备工作">准备工作</a>
+      <ol>
+        <li><a href="#方法一">方法一</a></li>
+        <li><a href="#方法二">方法二</a></li>
+      </ol>
+    </li>
+    <li><a href="#部署阶段">部署阶段</a></li>
   </ol>
 </nav>
         </div>
@@ -293,9 +297,9 @@
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
-            <a href="/p/hugo-%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0/">
+            <a href="/p/immich-1.90.x-%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/">
                 
-                    <img src="https://photo-1307600264.cos.ap-hongkong.myqcloud.com/Bing/2023-06/wallpaper_20230607.jpg" loading="lazy" alt="Featured image of post Hugo 新建文章" />
+                    <img src="https://rashida.cab:5065/i/2023/12/23/pa4lk.jpg" loading="lazy" alt="Featured image of post Immich 1.90.x 安装方法" />
                 
             </a>
         </div>
@@ -305,8 +309,8 @@
     
     <header class="article-category">
         
-            <a href="/categories/%E8%84%9A%E6%9C%AC/" >
-                脚本
+            <a href="/categories/docker/" >
+                Docker
             </a>
         
     </header>
@@ -314,12 +318,12 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/hugo-%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0/">Hugo 新建文章</a>
+            <a href="/p/immich-1.90.x-%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/">Immich 1.90.x 安装方法</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            利用 Python 新建文章到指定文件夹
+            Docker 部署的相册管理软件 1.90.x 安装方法
         </h3>
         
     </div>
@@ -340,7 +344,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">May 09, 2023</time>
+                <time class="article-time--published">Dec 22, 2023</time>
             </div>
         
 
@@ -355,7 +359,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -370,99 +374,84 @@
     <section class="article-content">
     
     
-    <blockquote>
-<p>利用 Python 新建 Hugo 文章到指定文件夹</p>
+    <h1 id="群晖-container-manager下面简称-cm-部署教程">群晖 Container Manager（下面简称 CM） 部署教程。</h1>
+<blockquote>
+<p><a class="link" href="https://immich.app/"  target="_blank" rel="noopener"
+    >immich 项目官方地址</a>。</p>
 </blockquote>
-<h1 id="使用方式">使用方式</h1>
-<h2 id="1-设置文章的元数据">1. 设置文章的元数据</h2>
-<h2 id="2-指定-hugo-的文章目录路径">2. 指定 Hugo 的文章目录路径</h2>
-<h2 id="3-创建新的-markdown-文件">3. 创建新的 Markdown 文件</h2>
-<p>Hugo 的文章目录路径默认为 Content 文件夹</p>
-<p>文件名默认为元数据中的 Title</p>
-<p>替换代码中的 % 占位符</p>
+<blockquote>
+<p>1.90.x 后 compose 文件内容有了较大变化，之前的升级后可能会导致数据丢失，请谨慎升级。</p>
+</blockquote>
+<h2 id="准备工作">准备工作</h2>
+<h3 id="方法一">方法一</h3>
+<p>首先打开群晖的文件管理在 docker 目录下 创建 immich-app 文件夹。
+再用 SSH 工具链接群晖 DSM 系统 。
+cd 到 immich-app 文件夹。
+运行下面两串命令，下载 docker compose 和 .env 文件。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">在代码</span> <span class="o">---</span> <span class="n">之后</span> <span class="s2">&#34;&#34;&#34; 之上添加你文章的内容
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">immich</span><span class="o">-</span><span class="n">app</span><span class="o">/</span><span class="n">immich</span><span class="o">/</span><span class="n">releases</span><span class="o">/</span><span class="n">latest</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="n">docker</span><span class="o">-</span><span class="n">compose</span><span class="o">.</span><span class="n">yml</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
-</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 设置文章的元数据</span>
-</span></span><span class="line"><span class="cl"><span class="n">title</span> <span class="o">=</span> <span class="s2">&#34;%&#34;</span> <span class="c1"># 文章标题</span>
-</span></span><span class="line"><span class="cl"><span class="n">description</span> <span class="o">=</span> <span class="s2">&#34;%&#34;</span> <span class="c1"># 文章描述</span>
-</span></span><span class="line"><span class="cl"><span class="n">tags</span> <span class="o">=</span> <span class="p">[</span><span class="o">%</span><span class="p">]</span> <span class="c1"># 文章标签</span>
-</span></span><span class="line"><span class="cl"><span class="n">categories</span> <span class="o">=</span> <span class="s2">&#34;%&#34;</span> <span class="c1"># 文章分类</span>
-</span></span><span class="line"><span class="cl"><span class="n">date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%Y-%m-</span><span class="si">%d</span><span class="s2">T%H:%M:%S+09:00&#34;</span><span class="p">)</span> <span class="c1"># 文章创建时间</span>
-</span></span><span class="line"><span class="cl"><span class="n">featured_image</span> <span class="o">=</span> <span class="s2">&#34;%&#34;</span> <span class="c1"># 文章特色图片</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 生成Markdown内容</span>
-</span></span><span class="line"><span class="cl"><span class="n">content</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;&#34;&#34;---
-</span></span></span><span class="line"><span class="cl"><span class="s2">title: &#34;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s2">&#34;
-</span></span></span><span class="line"><span class="cl"><span class="s2">description: &#34;</span><span class="si">{</span><span class="n">description</span><span class="si">}</span><span class="s2">&#34;
-</span></span></span><span class="line"><span class="cl"><span class="s2">tags: </span><span class="si">{</span><span class="n">tags</span><span class="si">}</span><span class="s2">
-</span></span></span><span class="line"><span class="cl"><span class="s2">categories: &#34;</span><span class="si">{</span><span class="n">categories</span><span class="si">}</span><span class="s2">&#34;
-</span></span></span><span class="line"><span class="cl"><span class="s2">date: &#34;</span><span class="si">{</span><span class="n">date</span><span class="si">}</span><span class="s2">&#34;
-</span></span></span><span class="line"><span class="cl"><span class="s2">featured_image: &#34;</span><span class="si">{</span><span class="n">featured_image</span><span class="si">}</span><span class="s2">&#34;
-</span></span></span><span class="line"><span class="cl"><span class="s2">---
-</span></span></span><span class="line"><span class="cl"><span class="s2">%%%%%%%%%%%%%
-</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 在上方 --- 之后 &#34;&#34;&#34; 之上添加你文章的内容</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 指定Hugo的文章目录路径</span>
-</span></span><span class="line"><span class="cl"><span class="n">hugo_content_dir</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&#34;</span><span class="si">%%%%%%</span><span class="s2">%完整路径</span><span class="si">%%%%%%</span><span class="s2">&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 创建新的Markdown文件</span>
-</span></span><span class="line"><span class="cl"><span class="n">slug</span> <span class="o">=</span> <span class="n">title</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&#34; &#34;</span><span class="p">,</span> <span class="s2">&#34;-&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">hugo_content_dir</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">slug</span><span class="si">}</span><span class="s2">.md&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s2">&#34;w&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;成功创建新的Hugo文章：</span><span class="si">{</span><span class="n">file_path</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="o">.</span><span class="n">env</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">immich</span><span class="o">-</span><span class="n">app</span><span class="o">/</span><span class="n">immich</span><span class="o">/</span><span class="n">releases</span><span class="o">/</span><span class="n">latest</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="n">example</span><span class="o">.</span><span class="n">env</span>
 </span></span></code></pre></td></tr></table>
 </div>
+</div><p>修改 .env 文件中的</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">UPLOAD_LOCATION=./library #替换成你的实际路径
+</span></span></code></pre></td></tr></table>
 </div>
+</div><p>修改 compose 文件中的映射端口。</p>
+<h3 id="方法二">方法二</h3>
+<p>去项目官网下载 docker compose 和 .env 文件，放到 immich-app 文件夹内。
+修改 .env 文件中的</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">UPLOAD_LOCATION=./library #替换成你的实际路径
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>修改 compose 文件中的映射端口。</p>
+<h2 id="部署阶段">部署阶段</h2>
+<p>打开群晖 CM 选择项目选项。
+选择新建项目。
+填写好项目名称以及项目地址（immich-app），提示使用已有 compose 文件，选择直接使用，开始部署。</p>
+<h1 id="更新-immich">更新 Immich</h1>
+<blockquote>
+<p>注意服务器版本和 APP 版本要保持一致！！否则无法使用 APP。</p>
+</blockquote>
+<p>先在项目中停用 Immich。
+打开群晖 SSH。
+使用链接工具链接后 sudo -i 获取管理员权限。
+cd 命令跳转到你 compose yaml 文件存储位置。
+使用命令开始更新</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker-compose pull
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>更新后回到群晖 CM 找到容器 之前创建的 Immich容器。
+右键复制设置然后清除就容器的端口号，在复制后的新容器中填写。
+启动 CM 项目，打开Immich 网页端。
+如果没有问题且更新到最新版，就可以删除旧容器正常使用了。</p>
+
 </section>
 
 
@@ -472,9 +461,7 @@
         
             <a href="/tags/win/">Win</a>
         
-            <a href="/tags/python/">Python</a>
-        
-            <a href="/tags/hugo/">Hugo</a>
+            <a href="/tags/docker/">Docker</a>
         
     </section>
 
@@ -520,18 +507,56 @@
             
                 
 <article class="has-image">
-    <a href="/p/rashida-tts/">
+    <a href="/p/immich-%E7%BE%A4%E6%99%96%E7%9B%B8%E5%86%8C%E6%9B%BF%E4%BB%A3/">
         
         
             <div class="article-image">
                 
-                    <img src="https://photo-1307600264.cos.ap-hongkong.myqcloud.com/Bing/2023-05/wallpaper_20230531.jpg" loading="lazy" data-key="" data-hash="https://photo-1307600264.cos.ap-hongkong.myqcloud.com/Bing/2023-05/wallpaper_20230531.jpg"/>
+                    <img src="https://rashida.cab:5065/i/2023/12/03/pambft.jpg" loading="lazy" data-key="" data-hash="https://rashida.cab:5065/i/2023/12/03/pambft.jpg"/>
                 
             </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">Rashida TTS</h2>
+            <h2 class="article-title">Immich 群晖相册替代</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/docker-%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://photo-1307600264.cos.ap-hongkong.myqcloud.com/Bing/2023-06/wallpaper_20230627.jpg" loading="lazy" data-key="" data-hash="https://photo-1307600264.cos.ap-hongkong.myqcloud.com/Bing/2023-06/wallpaper_20230627.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Docker 自动更新</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/aria2-%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%83%A8%E7%BD%B2/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://photo-1307600264.cos.ap-hongkong.myqcloud.com/Bing/2023-06/wallpaper_20230628.jpg" loading="lazy" data-key="" data-hash="https://photo-1307600264.cos.ap-hongkong.myqcloud.com/Bing/2023-06/wallpaper_20230628.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Aria2 下载器部署</h2>
         </div>
     </a>
 </article>

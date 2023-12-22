@@ -6,10 +6,18 @@
         <description>Recent content in Tags on Rashida&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sun, 03 Dec 2023 16:47:59 +0900</lastBuildDate><atom:link href="https://rashidakaku.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 22 Dec 2023 19:24:05 +0900</lastBuildDate><atom:link href="https://rashidakaku.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Test</title>
+        <link>https://rashidakaku.github.io/tags/test/</link>
+        <pubDate>Fri, 22 Dec 2023 19:24:05 +0900</pubDate>
+        
+        <guid>https://rashidakaku.github.io/tags/test/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Docker</title>
         <link>https://rashidakaku.github.io/tags/docker/</link>
-        <pubDate>Sun, 03 Dec 2023 16:47:59 +0900</pubDate>
+        <pubDate>Fri, 22 Dec 2023 16:47:59 +0900</pubDate>
         
         <guid>https://rashidakaku.github.io/tags/docker/</guid>
         <description></description>
@@ -17,7 +25,7 @@
         <item>
         <title>Win</title>
         <link>https://rashidakaku.github.io/tags/win/</link>
-        <pubDate>Sun, 03 Dec 2023 16:47:59 +0900</pubDate>
+        <pubDate>Fri, 22 Dec 2023 16:47:59 +0900</pubDate>
         
         <guid>https://rashidakaku.github.io/tags/win/</guid>
         <description></description>
