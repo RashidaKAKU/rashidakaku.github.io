@@ -10,7 +10,7 @@
 <meta property='og:description' content='Watchtower - 自动更新 Docker 镜像与容器'>
 <meta property='og:url' content='https://rashidakaku.github.io/p/docker-%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/'>
 <meta property='og:site_name' content='Rashida&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='群晖' /><meta property='article:tag' content='Docker' /><meta property='article:tag' content='教程' /><meta property='article:published_time' content='2023-06-29T05:53:11&#43;09:00'/><meta property='article:modified_time' content='2023-12-24T21:49:54&#43;00:00'/><meta property='og:image' content='https://photo-1307600264.cos.ap-hongkong.myqcloud.com/Bing/2023-06/wallpaper_20230627.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='群晖' /><meta property='article:tag' content='Docker' /><meta property='article:tag' content='教程' /><meta property='article:published_time' content='2023-06-29T05:53:11&#43;09:00'/><meta property='article:modified_time' content='2023-12-24T21:53:20&#43;00:00'/><meta property='og:image' content='https://photo-1307600264.cos.ap-hongkong.myqcloud.com/Bing/2023-06/wallpaper_20230627.jpg' />
 <meta name="twitter:title" content="Docker 自动更新">
 <meta name="twitter:description" content="Watchtower - 自动更新 Docker 镜像与容器"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://photo-1307600264.cos.ap-hongkong.myqcloud.com/Bing/2023-06/wallpaper_20230627.jpg' />
@@ -412,8 +412,8 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="指定容器更新">指定容器更新</h1>
-<p>如无需自动更新所有稳定运行的容器，可以配置仅更新指定容器，只需要在命令后加上容器名：例如只更新 nginx 和 redis。
-注意指定容器需填写 容器名，并非镜像名。由于部分容器启动时可能没有定义 &ndash;name 参数，请执行 docker ps 查询核对容器名。</p>
+<p>如无需自动更新所有稳定运行的容器，可以配置仅更新指定容器，只需要在命令后加上容器名：例如只更新 nginx 和 redis。</p>
+<p>注意指定容器需填写 容器名，并非镜像名。由于部分容器启动时可能没有定义 &ndash;name 参数，请执行 docker ps 查询核对容器名。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -435,8 +435,8 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="配置自动更新频率">配置自动更新频率</h1>
-<p>Watch­tower
-默认每 5 分钟轮询一次，可以使用以下参数配置更新的频率。</p>
+<p>Watch­tower</p>
+<p>默认每 5 分钟轮询一次，可以使用以下参数配置更新的频率。</p>
 <ul>
 <li>&ndash;interval,-i 配置更新周期，默认 300 秒。</li>
 <li>&ndash;schedule,-s 配置定时更新，使用 Cron 表达式，例如 &ldquo;0 0 1 * * *&rdquo; 即每天凌晨 1 点更新。
@@ -563,7 +563,7 @@
 
 
         <span>
-            最后更新于 Dec 24, 2023 21:49 UTC
+            最后更新于 Dec 24, 2023 21:53 UTC
         </span>
     </section></footer>
 

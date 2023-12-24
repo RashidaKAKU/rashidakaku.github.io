@@ -132,10 +132,10 @@
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;准备工作&#34;&gt;准备工作&lt;/h2&gt;
 &lt;h3 id=&#34;方法一&#34;&gt;方法一&lt;/h3&gt;
-&lt;p&gt;首先打开群晖的文件管理在 docker 目录下 创建 immich-app 文件夹。
-再用 SSH 工具链接群晖 DSM 系统 。
-cd 到 immich-app 文件夹。
-运行下面两串命令，下载 docker compose 和 .env 文件。&lt;/p&gt;
+&lt;p&gt;首先打开群晖的文件管理在 docker 目录下 创建 immich-app 文件夹。&lt;/p&gt;
+&lt;p&gt;再用 SSH 工具链接群晖 DSM 系统 。&lt;/p&gt;
+&lt;p&gt;cd 到 immich-app 文件夹。&lt;/p&gt;
+&lt;p&gt;运行下面两串命令，下载 docker compose 和 .env 文件。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -163,8 +163,8 @@ cd 到 immich-app 文件夹。
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;修改 compose 文件中的映射端口。&lt;/p&gt;
 &lt;h3 id=&#34;方法二&#34;&gt;方法二&lt;/h3&gt;
-&lt;p&gt;去项目官网下载 docker compose 和 .env 文件，放到 immich-app 文件夹内。
-修改 .env 文件中的&lt;/p&gt;
+&lt;p&gt;去项目官网下载 docker compose 和 .env 文件，放到 immich-app 文件夹内。&lt;/p&gt;
+&lt;p&gt;修改 .env 文件中的&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -175,18 +175,18 @@ cd 到 immich-app 文件夹。
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;修改 compose 文件中的映射端口。&lt;/p&gt;
 &lt;h2 id=&#34;部署阶段&#34;&gt;部署阶段&lt;/h2&gt;
-&lt;p&gt;打开群晖 CM 选择项目选项。
-选择新建项目。
-填写好项目名称以及项目地址（immich-app），提示使用已有 compose 文件，选择直接使用，开始部署。&lt;/p&gt;
+&lt;p&gt;打开群晖 CM 选择项目选项。&lt;/p&gt;
+&lt;p&gt;选择新建项目。&lt;/p&gt;
+&lt;p&gt;填写好项目名称以及项目地址（immich-app），提示使用已有 compose 文件，选择直接使用，开始部署。&lt;/p&gt;
 &lt;h1 id=&#34;更新-immich&#34;&gt;更新 Immich&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;注意服务器版本和 APP 版本要保持一致！！否则无法使用 APP。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;先在项目中停用 Immich。
-打开群晖 SSH。
-使用链接工具链接后 sudo -i 获取管理员权限。
-cd 命令跳转到你 compose yaml 文件存储位置。
-使用命令开始更新&lt;/p&gt;
+&lt;p&gt;先在项目中停用 Immich。&lt;/p&gt;
+&lt;p&gt;打开群晖 SSH。&lt;/p&gt;
+&lt;p&gt;使用链接工具链接后 sudo -i 获取管理员权限。&lt;/p&gt;
+&lt;p&gt;cd 命令跳转到你 compose yaml 文件存储位置。&lt;/p&gt;
+&lt;p&gt;使用命令开始更新&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -195,10 +195,10 @@ cd 命令跳转到你 compose yaml 文件存储位置。
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker-compose pull
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;更新后回到群晖 CM 找到容器 之前创建的 Immich容器。
-右键复制设置然后清除就容器的端口号，在复制后的新容器中填写。
-启动 CM 项目，打开Immich 网页端。
-如果没有问题且更新到最新版，就可以删除旧容器正常使用了。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;更新后回到群晖 CM 找到容器 之前创建的 Immich容器。&lt;/p&gt;
+&lt;p&gt;右键复制设置然后清除就容器的端口号，在复制后的新容器中填写。&lt;/p&gt;
+&lt;p&gt;启动 CM 项目，打开Immich 网页端。&lt;/p&gt;
+&lt;p&gt;如果没有问题且更新到最新版，就可以删除旧容器正常使用了。&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -212,9 +212,9 @@ cd 命令跳转到你 compose yaml 文件存储位置。
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://immich.app/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;immich 项目官方地址&lt;/a&gt;。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;打开群晖 CM 选择项目选项。
-选择新建项目。
-填写好项目名称以及项目地址。&lt;/p&gt;
+&lt;p&gt;打开群晖 CM 选择项目选项。&lt;/p&gt;
+&lt;p&gt;选择新建项目。&lt;/p&gt;
+&lt;p&gt;填写好项目名称以及项目地址。&lt;/p&gt;
 &lt;p&gt;创建 Docker compose 代码如下&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -312,11 +312,11 @@ cd 命令跳转到你 compose yaml 文件存储位置。
 &lt;blockquote&gt;
 &lt;p&gt;注意服务器版本和 APP 版本要保持一致！！否则无法使用 APP。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;先在项目中停用 Immich。
-打开群晖 SSH。
-使用链接工具链接后 sudo -i 获取管理员权限。
-cd 命令跳转到你 compose yaml 文件存储位置。
-使用命令开始更新&lt;/p&gt;
+&lt;p&gt;先在项目中停用 Immich。&lt;/p&gt;
+&lt;p&gt;打开群晖 SSH。&lt;/p&gt;
+&lt;p&gt;使用链接工具链接后 sudo -i 获取管理员权限。&lt;/p&gt;
+&lt;p&gt;cd 命令跳转到你 compose yaml 文件存储位置。&lt;/p&gt;
+&lt;p&gt;使用命令开始更新&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -325,10 +325,10 @@ cd 命令跳转到你 compose yaml 文件存储位置。
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker-compose pull
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;更新后回到群晖 CM 找到容器 之前创建的 Immich容器。
-右键复制设置然后清除就容器的端口号，在复制后的新容器中填写。
-启动 CM 项目，打开Immich 网页端。
-如果没有问题且更新到最新版，就可以删除旧容器正常使用了。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;更新后回到群晖 CM 找到容器 之前创建的 Immich容器。&lt;/p&gt;
+&lt;p&gt;右键复制设置然后清除就容器的端口号，在复制后的新容器中填写。&lt;/p&gt;
+&lt;p&gt;启动 CM 项目，打开Immich 网页端。&lt;/p&gt;
+&lt;p&gt;如果没有问题且更新到最新版，就可以删除旧容器正常使用了。&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -375,8 +375,8 @@ cd 命令跳转到你 compose yaml 文件存储位置。
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;指定容器更新&#34;&gt;指定容器更新&lt;/h1&gt;
-&lt;p&gt;如无需自动更新所有稳定运行的容器，可以配置仅更新指定容器，只需要在命令后加上容器名：例如只更新 nginx 和 redis。
-注意指定容器需填写 容器名，并非镜像名。由于部分容器启动时可能没有定义 &amp;ndash;name 参数，请执行 docker ps 查询核对容器名。&lt;/p&gt;
+&lt;p&gt;如无需自动更新所有稳定运行的容器，可以配置仅更新指定容器，只需要在命令后加上容器名：例如只更新 nginx 和 redis。&lt;/p&gt;
+&lt;p&gt;注意指定容器需填写 容器名，并非镜像名。由于部分容器启动时可能没有定义 &amp;ndash;name 参数，请执行 docker ps 查询核对容器名。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -398,8 +398,8 @@ cd 命令跳转到你 compose yaml 文件存储位置。
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;配置自动更新频率&#34;&gt;配置自动更新频率&lt;/h1&gt;
-&lt;p&gt;Watch­tower
-默认每 5 分钟轮询一次，可以使用以下参数配置更新的频率。&lt;/p&gt;
+&lt;p&gt;Watch­tower&lt;/p&gt;
+&lt;p&gt;默认每 5 分钟轮询一次，可以使用以下参数配置更新的频率。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&amp;ndash;interval,-i 配置更新周期，默认 300 秒。&lt;/li&gt;
 &lt;li&gt;&amp;ndash;schedule,-s 配置定时更新，使用 Cron 表达式，例如 &amp;ldquo;0 0 1 * * *&amp;rdquo; 即每天凌晨 1 点更新。
@@ -530,8 +530,8 @@ cd 命令跳转到你 compose yaml 文件存储位置。
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;ariang-docker-cli-部署&#34;&gt;AriaNG Docker Cli 部署&lt;/h1&gt;
-&lt;p&gt;可以修改用户端口
-可以在 Docker 面板中设置关联容器 Aria2&lt;/p&gt;
+&lt;p&gt;可以修改用户端口&lt;/p&gt;
+&lt;p&gt;可以在 Docker 面板中设置关联容器 Aria2&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
