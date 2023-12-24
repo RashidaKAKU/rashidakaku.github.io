@@ -106,10 +106,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;restart&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;on&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;failure&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;修改 compose 文件中的映射端口。
-修改 db 中的文件映射本地路径，如果按照准备阶段创建文件夹，可以不用修改。
-修改 wallabag 中的文件映射本地路径，如果按照准备阶段创建文件夹，可以不用修改。
-修改 SYMFONY__ENV__DOMAIN_NAME=xxxxxx 中的xxxxxx 为你反代之后的 https 地址，否则可能会出现加载错误。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;修改 compose 文件中的映射端口。&lt;/p&gt;
+&lt;p&gt;修改 db 中的文件映射本地路径，如果按照准备阶段创建文件夹，可以不用修改。&lt;/p&gt;
+&lt;p&gt;修改 wallabag 中的文件映射本地路径，如果按照准备阶段创建文件夹，可以不用修改。&lt;/p&gt;
+&lt;p&gt;修改 SYMFONY__ENV__DOMAIN_NAME=xxxxxx 中的xxxxxx 为你反代之后的 https 地址，否则可能会出现加载错误。&lt;/p&gt;
 &lt;h2 id=&#34;部署阶段&#34;&gt;部署阶段&lt;/h2&gt;
 &lt;p&gt;打开群晖 CM 选择项目选项。
 选择新建项目。
